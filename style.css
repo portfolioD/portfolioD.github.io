@@ -47,6 +47,7 @@
 
         .section-details {
             margin-bottom: 40px;
+            border: 1px solid #EDE2CD;
         }
         @media (max-width: 767px) {
         /* Your CSS styles for smaller screens go here */
