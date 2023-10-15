@@ -10,155 +10,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="font.css">
-
-    <style>
-        /* Add some custom styles if needed */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFFFFF;
-        }
-        /* Add more custom styles as needed */
-        /* Reduce the width of the navbar and content to 80% */
-        .navbar {
-            /* Change navbar color to light */
-            margin: 0 auto;
-            background: #FFAA01;
-        }
-
-        .container {
-            width: 70%;
-            margin: 0 auto;
-        }
-
-        /* Align navbar items to the center */
-        .navbar-nav {
-            text-align: center;
-            width: 100%;
-        }
-
-        .title-border-project {
-            padding: 0px !important;
-            border-bottom: 2px solid rgb(237, 180, 30) !important;
-            margin-top: 15px !important;
-            margin-bottom: 15px !important;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .column-details {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem !important;
-        }
-
-        .section-details {
-            margin-bottom: 40px;
-        }
-        @media (max-width: 767px) {
-        /* Your CSS styles for smaller screens go here */
-            .section-details {
-                margin-bottom: 20px;
-                width:90% !important
-            }
-            .project-title {
-                margin-top: 1px !important;
-            }
-        }
-
-        .section-title {
-            font-size: 18px;
-        }
-
-        .section-details img {
-            width: 71%;
-        }
-
-        h2#section-title {
-            font-size: x-large;
-        }
-
-        .post-title {
-            font-size: medium;
-            font-weight: 500;
-            padding-top: 30px;
-        }
-
-        .project-title {
-            margin-top: 20px;
-            font-size: 1.5rem
-        }
-
-        li.nav-item a {
-            color: #002c42 !important;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        #hero1 {
-            height: 300px;
-            
-        }
-        /* Styles for screens smaller than tablets (less than 768px) */
-        @media (max-width: 767px) {
-        /* Your CSS styles for smaller screens go here */
-        #hero1 {
-            height: 50px;  
-        }
-
-        .container-fluid.mobile-hero {
-            --bs-gutter-x: 0 !important;
-         }
-        }
-
-        .portfolio-navbar,
-        #hero1 {
-            padding: 0px !important;
-        }
-
-        #section2,
-        #section4,
-        #section6 {
-            background: #F3F3F3;
-        }
-
-        col-md-4.column-first {
-            margin-right: 30px;
-            border: 1px solid saddlebrown;
-        }
-
-        .column-first img,
-        .column-second img {
-            width: 100%;
-        }
-
-        .item{
-             height:500px;
-        }
-
-        .item img {
-            width: 100%;
-            height: 100% !important;
-            object-fit: cover;
-        }
-
-        /* Styles for screens smaller than tablets (less than 768px) */
-        @media (max-width: 767px) {
-        /* Your CSS styles for smaller screens go here */
-            .hero{
-                width:100% !important;
-
-            }
-        }
-     
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="sticky-top">
         <div class="container portfolio-navbar hero">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid mobile-hero">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+    <div id="hero_im"><img src="images/hero_image_breadcrumb.png" alt="Desktop Image" class="img-fluid"></div>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -187,24 +49,14 @@
     <div class="container-fluid mobile-hero">
         <!-- Section 1 -->
  
-        <section id="hero1" class="container g-0 hero">
-                      <!-- Mobile Image -->
-            <div class="d-md-none col-12">
-              <img src="images/logo-mobile.png" alt="Mobile Image" class="img-fluid">
-            </div>
-
-            <!-- Desktop Image -->
-            <div class="d-none d-md-block col-md-12">
-             <img src="images/hero_image_breadcrumb.png" alt="Desktop Image" class="img-fluid">
-            </div>
-        </section>
+        
     </div>
 
     <!-- Content Container -->
     <div class="container-fluid">
         <!-- Section 1 -->
         <section id="section1" class="container section-details  py-5">
-            <h1 class="project-title">ARITZIA HEADQUARTERS</h2>
+            <h1 class="project-title">ARITZIA HEADQUARTERS</h1>
             <h2 id="section-title" class="post-title">Project Details</h2>
             <div class="row justify-content-center">
                 <!-- First small column -->
@@ -247,7 +99,7 @@
                 </div>
                 <div class="col-md-4 custom-column">
                     <p class="title-border-project post-title">CLIENT BRANDING</p>
-                    <img src="images/client_branding_1.png" alt="Client Branding" />
+                    <img src="images/client_branding_1.png" alt="Client Branding">
                 </div>
             </div>
         </section>
@@ -258,7 +110,7 @@
             <p>This is the content of Section 2.</p>
             <!-- Content for Floor Plan tab -->
             <p>This is the content for the Floor Plan tab.</p>
-            <img src="images/floorplan_artizia.png" alt="Floor Plan" />
+            <img src="images/floorplan_artizia.png" alt="Floor Plan">
             <!-- First small column -->
             <div class="col-md-2">
                 <p>This is a small column.</p>
@@ -281,12 +133,12 @@
                 <div class="col-md-5 column-first">
                     <h3 class="title-border-project post-title">AXONOMETRIC VIEW - 36TH FL</h3>
                     <!-- Content for Objective tab -->
-                    <img src="images/Axonmetric_view-36fl.png" alt="Axonometric View - 36th Floor" />
+                    <img src="images/Axonmetric_view-36fl.png" alt="Axonometric View - 36th Floor">
                 </div>
                 <!-- Second and third equal-width columns -->
                 <div class="col-md-5 column-second">
                     <h3 class="title-border-project post-title">AXONOMETRIC VIEW - 37TH FL</h3>
-                    <img src="images/AXONOMETRIC_VIEW _37TH_FL.png" alt="Axonometric View - 37th Floor" />
+                    <img src="images/AXONOMETRIC_VIEW _37TH_FL.png" alt="Axonometric View - 37th Floor">
                 </div>
             </div>
         </section>
@@ -294,10 +146,10 @@
         <!-- Section 4 -->
         <section id="section4" class="container section-details  py-5">
             <h1 id="section-title" class="post-title">Material</h1>
-            <p>SELECTED MATERIALS & FINISHES</p>
-            <img src="images/selected_material.png" alt="Selected Materials & Finishes" />
-            <p>SELECTED FURNITURE & FINISHES</p>
-            <img src="images/selected_furniture.png" alt="Selected Furniture & Finishes" />
+            <p>SELECTED MATERIALS &amp; FINISHES</p>
+            <img src="images/selected_material.png" alt="Selected Materials &amp; Finishes">
+            <p>SELECTED FURNITURE &amp; FINISHES</p>
+            <img src="images/selected_furniture.png" alt="Selected Furniture &amp; Finishes">
         </section>
 
         <!-- Section 5 -->
@@ -306,23 +158,21 @@
             <p>OPEN WORK AREA RENDERING</p>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <img src="images/Rendered-view_1.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <img src="images/rendered_view-2.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="images/rendered_view-3.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
