@@ -3,79 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website with Sidebar</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  <style>
-    /* your custom styles go here */
-    body {
-      background-color: #f7f7f7;
-    }
-    .navbar {
-      background-color:#EDE2CD;
-    }
-    .sidebar-section {
-      color: #fff;
-      padding: 50px;
-    }
-    .main-section {
-      padding: 50px;
-    }
-    body .img-fluid{
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 100%;
-    }
- 
-  </style>
+  <title>Homepage</title>
+  <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg  fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Menu</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+<body id = "landing_page">
+  <div class="sticky-top">
+    <div class="container portfolio-navbar hero">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mobile-hero">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+<div id="hero_im"><img src="images/hero_image_breadcrumb.png" alt="Desktop Image" class="img-fluid"></div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section4">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section5">Thesis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-  </nav>
+</div>
 
-  <!-- Content -->
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Sidebar Section -->
-      <div class="col-lg-3 col-md-4 sidebar-section">
-        <img src="artist-image.jpg" alt="Profile Image" class="img-fluid mb-4">
-      </div>
-      <!-- Main Section -->
-      <div class="col-lg-9 col-md-8 main-section">
-        <h1>Main Content</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed erat et risus fringilla lacinia. Vestibulum nec bibendum tellus, at placerat sem. Duis ac consectetur libero. Mauris malesuada ex leo, non pharetra purus finibus et. Quisque egestas massa a nisl tristique venenatis. Phasellus nec gravida justo. Nullam quis metus a lorem sagittis mattis. Mauris id quam in enim tempor vehicula. Ut euismod augue ut vehicula scelerisque.</p>
-        <p>In hac habitasse platea dictumst. Curabitur velit ligula, aliquam vitae interdum sed, hendrerit id mauris. Aliquam elementum eros vel tortor ultricies rutrum. In odio odio, commodo id justo ac, rutrum lacinia lorem. Aenean placerat tellus id nisi suscipit scelerisque. Vestibulum sed magna ipsum. Donec mollis felis turpis, at lobortis mauris cursus a. Nunc ipsum mi, congue eu velit non, tincidunt porta eros.</p>
-      </div>
-    </div>
+    
+        <!-- Section 2 -->
+        <section id="portfolio" class="container section-details  py-5">
+          
+          <div class="row">
+                    <!-- Content -->
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Sidebar Section -->
+              <div class="col-lg-4 col-md-3 sidebar-section">
+                <img src="artist-image.jpg" alt="Profile Image" class="img-fluid mb-4">
+              </div>
+              <!-- Main Section -->
+              <div class="col-lg-8 col-md-7 main-section">
+                <div class ="row">
+                  <h4 class="page-title">About me</h4>
+                  <p>I am passionate about creating beautifully purposeful spaces.
+                    My creative approach is informed by my enthusiasm for historic preservation, the history of architecture and interiors, and timeless, classic design. 
+                    I also firmly believe in designing for the greater good through sustainable methods and practices. 
+                    Upon completing further education and work experience in the profession, I plan to earn the NCIDQ Certification and become an ASID Professional Member.    
+                    I completed my graduation from the New York School of Interior Design with an Associate in Applied Science (AAS) in Interior Design and a Basic Interior Design Certificate (BID).
+                    I have Allied Member membership from prestigous AMERICAN SOCIETY OF INTERIOR DESIGNERS, ASID. </p>
+                </div>
+  
+                <div class="row mt-4">
+                  <h5 class="page-title">My Skills</h5>      
+                </div>      
+                <div class="row">
+                  <div class="col-md-6">
+                    <address>
+                      <li>Concept Development</li>
+                      <li>Space Planning</li>
+                      <li>Color Theory</li>
+                      <li>Material Sourcing</li>
+                      <li> Presentations</li>
+                      <li>Studio Designer</li>
+                      <li>Residential Design</li>
+                      <li>Commercial Design</li>
+                    </address>
+                  </div>
+                  <div class="col-md-6">
+                    <address>
+                      <ul>
+                        <li>AutoCAD</li>
+                        <li>Revit</li>
+                        <li>Microsoft Office</li>
+                        <li>Adobe Photoshop</li>
+                        <li> Adobe InDesign</li>
+                        <li>Studio Designer</li>
+                    </ul>
+                    </address>
+                  </div>
+                </div>
+
+
+             </div>
+          </div>
+            <!-- Add more portfolio items as needed -->
+      
+          </div>
+
+      </section>
+
+
   </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

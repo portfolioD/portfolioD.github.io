@@ -4,6 +4,26 @@
             background-color: #EDE2CD;
             background-image: linear-gradient(#EDE2CD, #eae1cf);
         }
+
+        #landing_page .main-section {
+            color: #725A2C;
+        }
+        
+        #landing_page .section-details img {
+             width: 100%; 
+          
+        }
+        #landing_page .page-title
+        {  
+          border-bottom: 2px solid rgb(237, 180, 30) !important;
+          width: fit-content;
+        }
+        #landing_page .sub-title
+        {  
+          color:#635A2C;
+          font-family: 'Montserrat', sans-serif;
+        }
+        
         /* Add more custom styles as needed */
         /* Reduce the width of the navbar and content to 80% */
         .navbar {
@@ -76,13 +96,13 @@
             font-size: medium;
             font-weight: 500;
             padding-top: 30px;
-            color: #3D5867 !important;
+            color: #635A2C!important;
         }
 
         .project-title {
             margin-top: 20px;
             font-size: 1.5rem;
-            color: #001F3F  !important;
+            color: #635A2C !important;
         }
 
         li.nav-item{
@@ -174,6 +194,12 @@
             margin-bottom: 5px;
             color: #725A2C;
           }
+
+          .portfolio-item  a {
+            color:#725A2C;
+            text-decoration: none;
+            background-color: transparent;
+             }
           
           .portfolio-item .card-subtitle {
             color: #888;
