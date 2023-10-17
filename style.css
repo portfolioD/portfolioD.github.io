@@ -150,12 +150,11 @@
             padding: 0px !important;
         }
 
-        #section2,
+       /* #section2,
         #section4,
         #section6 {
             background: #F3F3F3;
-        }
-
+        }*/
         col-md-4.column-first {
             margin-right: 30px;
             border: 1px solid saddlebrown;
