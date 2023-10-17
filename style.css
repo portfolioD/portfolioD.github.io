@@ -1,8 +1,14 @@
         /* Add some custom styles if needed */
         body {
             font-family: Arial, sans-serif;
-            background-color: #EDE2CD;
-            background-image: linear-gradient(#EDE2CD, #eae1cf);
+            background-color: #ffffff;
+           /* background-image: linear-gradient(#EDE2CD, #eae1cf);*/
+        }
+
+        .position-relative {
+            width: 100%;
+            top: 0;
+            z-index: 1070;
         }
 
         #landing_page .main-section {
