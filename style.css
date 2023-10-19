@@ -15,10 +15,12 @@
             color: #725A2C;
             font-size: 1.1em;
             line-height: 1.7;
+            padding:33px;
         }
         
         #landing_page .section-details img {
              width: 100%; 
+             margin-top:50px;
           
         }
         #landing_page .page-title
