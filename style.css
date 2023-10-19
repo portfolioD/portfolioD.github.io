@@ -13,6 +13,8 @@
 
         #landing_page .main-section {
             color: #725A2C;
+            font-size: 1.1em;
+            line-height: 1.7;
         }
         
         #landing_page .section-details img {
@@ -23,11 +25,18 @@
         {  
           border-bottom: 2px solid rgb(237, 180, 30) !important;
           width: fit-content;
+          font-weight: 600;
+          font-size:  1.6em;
         }
         #landing_page .sub-title
         {  
           color:#635A2C;
           font-family: 'Montserrat', sans-serif;
+        }
+
+        .sub-title{
+            font-weight: 600;
+
         }
         
         /* Add more custom styles as needed */
