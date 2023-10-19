@@ -38,7 +38,12 @@
 
         .sub-title{
             font-weight: 600;
+        }
 
+        @media (max-width: 767px) {
+            .skills-column{
+                padding: 20px !important;
+            }
         }
         
         /* Add more custom styles as needed */
