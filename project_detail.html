@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,97 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <div class="sticky-top">
         <div class="container portfolio-navbar hero">
-            <nav class="navbar navbar-expand-lg">
+           <!----<nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid mobile-hero">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div id="hero_im">
                         <a class="navbar-brand" href="index.html">
-                          <img src="images/hero_image_breadcrumb.png" alt="Desktop Image" class="img-fluid">
-                          </a>
-                      </div>
+                            <img src="images/hero_image_breadcrumb.png" alt="Desktop Image" class="img-fluid">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section3">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section4">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section5">Thesis</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div id="hero_im">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/hero_image_breadcrumb.png" alt="Desktop Image" class="img-fluid">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section4">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section5">Thesis</a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+        </div>
+
+        <div class="container-fluid p-0">
+            <div class="row align-items-center">
+                <div class="col text-center">
+                    <img src="images/hero_isometric.jpg" alt="Hero Image" class="img-fluid"
+                        style="max-height: 400px;" />
+                </div>
+            </div>
+        </div>
+        <div class="container portfolio-navbar hero">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid mobile-hero">
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#section1">Project</a>
+                                <a class="nav-link active" id="concept-tab" data-bs-toggle="tab"
+                                    href="#section1">Project</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#section2">Floor plan</a>
+                                <a class="nav-link  id=" objective-tab data-bs-toggle="tab" href="#section2">Floor
+                                    plan</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#section3">Isometric View</a>
@@ -42,142 +113,146 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </nav>
         </div>
     </div>
 
 
+
+    </div>
     <!-- Content Container -->
-    <div class="container-fluid">
-        <!-- Section 1 -->
-        <section id="section1" class="container section-details  py-5">
-            <h1 class="project-title">ARITZIA HEADQUARTERS</h1>
-            <h2 id="section-title" class="post-title">Project Details</h2>
-            <div class="row justify-content-center">
-                <!-- First small column -->
-                <div class="col-md-4 custom-column">
-                    <h3 class="title-border-project post-title">Concept</h3>
-                    <!-- Content for Objective tab -->
-                    <p class="column-details">
-                        Aritzia is an upscale women's
-                        fashion brand. A juxtaposition
-                        of trendy yet timeless styles
-                        embodies their clothing,
-                        focusing on everyday luxury.
-                        Following the brand's aesthetic
-                        of neutral tones with a modern
-                        and minimalist look, the office
-                        design brings an elevated touch
-                        while being functional.
-                        A collaborative and open work
-                        area promotes creativity and
-                        fosters productivity.
 
-                    </p>
-                </div>
-                <!-- Second and third equal-width columns -->
-                <div class="col-md-4 custom-column">
-                    <h3 class="title-border-project post-title">Objectives</h3>
-                    <ul class="column-details">
-                        <li>
-                            <strong>Objective:</strong> Design the lighting plan and make selections for three spaces:
-                            <ul>
-                                <li>The living area</li>
-                                <li>Kitchen</li>
-                                <li>Dining room</li>
-                            </ul>
-                        </li>
-                        <li><strong>Type:</strong> Residential Design</li>
-                        <li><strong>Location:</strong> Côte d'Azur, France</li>
-                        <li><strong>Area:</strong> 850 SF</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 custom-column">
-                    <p class="title-border-project post-title">CLIENT BRANDING</p>
-                    <img src="images/client_branding_1.png" alt="Client Branding">
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 2 -->
-        <section id="section2" class="container section-details  py-5">
-            <h1 id="project-title" class="post-title">Floor plan</h1>
-            <p>This is the content of Section 2.</p>
-            <!-- Content for Floor Plan tab -->
-            <p>This is the content for the Floor Plan tab.</p>
-            <img src="images/floorplan_artizia.png" alt="Floor Plan">
+    <section id="section1" class="container section-details  py-5">
+        <h1 class="project-title">ARITZIA HEADQUARTERS</h1>
+        <h2 id="section-title" class="post-title">Project Details</h2>
+        <div class="row justify-content-center">
             <!-- First small column -->
-            <div class="col-md-2">
-                <p>This is a small column.</p>
+            <div class="col-md-4 custom-column">
+                <h3 class="title-border-project post-title">Concept</h3>
+                <!-- Content for Objective tab -->
+                <p class="column-details">
+                    Aritzia is an upscale women's
+                    fashion brand. A juxtaposition
+                    of trendy yet timeless styles
+                    embodies their clothing,
+                    focusing on everyday luxury.
+                    Following the brand's aesthetic
+                    of neutral tones with a modern
+                    and minimalist look, the office
+                    design brings an elevated touch
+                    while being functional.
+                    A collaborative and open work
+                    area promotes creativity and
+                    fosters productivity.
+
+                </p>
             </div>
             <!-- Second and third equal-width columns -->
-            <div class="col-md-5">
-                <p>This is the first equal-width column.</p>
+            <div class="col-md-4 custom-column">
+                <h3 class="title-border-project post-title">Objectives</h3>
+                <ul class="column-details">
+                    <li>
+                        <strong>Objective:</strong> Design the lighting plan and make selections for three spaces:
+                        <ul>
+                            <li>The living area</li>
+                            <li>Kitchen</li>
+                            <li>Dining room</li>
+                        </ul>
+                    </li>
+                    <li><strong>Type:</strong> Residential Design</li>
+                    <li><strong>Location:</strong> Côte d'Azur, France</li>
+                    <li><strong>Area:</strong> 850 SF</li>
+                </ul>
             </div>
-            <div class="col-md-5">
-                <p>This is the second equal-width column.</p>
+            <div class="col-md-4 custom-column">
+                <p class="title-border-project post-title">CLIENT BRANDING</p>
+                <img src="images/client_branding_1.png" alt="Client Branding">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Section 3 -->
-        <section id="section3" class="container section-details  py-5">
-            <h1 id="section-title" class="post-title">Isometric View</h1>
-            <p>3D VIEWS - AXONOMETRIC FLOOR PLAN VIEWS</p>
-            <div class="row">
-                <!-- First small column -->
-                <div class="col-md-5 column-first">
-                    <h3 class="title-border-project post-title">AXONOMETRIC VIEW - 36TH FL</h3>
-                    <!-- Content for Objective tab -->
-                    <img src="images/Axonmetric_view-36fl.png" alt="Axonometric View - 36th Floor">
+    <!-- Section 2 -->
+    <section id="section2" class="container section-details  py-5">
+        <h1 id="project-title" class="post-title">Floor plan</h1>
+        <p>This is the content of Section 2.</p>
+        <!-- Content for Floor Plan tab -->
+        <p>This is the content for the Floor Plan tab.</p>
+        <img src="images/floorplan_artizia.png" alt="Floor Plan">
+        <!-- First small column -->
+        <div class="col-md-2">
+            <p>This is a small column.</p>
+        </div>
+        <!-- Second and third equal-width columns -->
+        <div class="col-md-5">
+            <p>This is the first equal-width column.</p>
+        </div>
+        <div class="col-md-5">
+            <p>This is the second equal-width column.</p>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3" class="container section-details  py-5">
+        <h1 id="section-title" class="post-title">Isometric View</h1>
+        <p>3D VIEWS - AXONOMETRIC FLOOR PLAN VIEWS</p>
+        <div class="row">
+            <!-- First small column -->
+            <div class="col-md-5 column-first">
+                <h3 class="title-border-project post-title">AXONOMETRIC VIEW - 36TH FL</h3>
+                <!-- Content for Objective tab -->
+                <img src="images/Axonmetric_view-36fl.png" alt="Axonometric View - 36th Floor">
+            </div>
+            <!-- Second and third equal-width columns -->
+            <div class="col-md-5 column-second">
+                <h3 class="title-border-project post-title">AXONOMETRIC VIEW - 37TH FL</h3>
+                <img src="images/AXONOMETRIC_VIEW _37TH_FL.png" alt="Axonometric View - 37th Floor">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section4" class="container section-details  py-5">
+        <h1 id="section-title" class="post-title">Material</h1>
+        <p>SELECTED MATERIALS &amp; FINISHES</p>
+        <img src="images/selected_material.png" alt="Selected Materials &amp; Finishes">
+        <p>SELECTED FURNITURE &amp; FINISHES</p>
+        <img src="images/selected_furniture.png" alt="Selected Furniture &amp; Finishes">
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section5" class="container section-details  py-5">
+        <h1 id="section-title" class="post-title">Rendered View</h1>
+        <p>OPEN WORK AREA RENDERING</p>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="images/Rendered-view_1.png" class="d-block w-100" alt="...">
                 </div>
-                <!-- Second and third equal-width columns -->
-                <div class="col-md-5 column-second">
-                    <h3 class="title-border-project post-title">AXONOMETRIC VIEW - 37TH FL</h3>
-                    <img src="images/AXONOMETRIC_VIEW _37TH_FL.png" alt="Axonometric View - 37th Floor">
+                <div class="carousel-item active">
+                    <img src="images/rendered_view-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/rendered_view-3.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-        </section>
-
-        <!-- Section 4 -->
-        <section id="section4" class="container section-details  py-5">
-            <h1 id="section-title" class="post-title">Material</h1>
-            <p>SELECTED MATERIALS &amp; FINISHES</p>
-            <img src="images/selected_material.png" alt="Selected Materials &amp; Finishes">
-            <p>SELECTED FURNITURE &amp; FINISHES</p>
-            <img src="images/selected_furniture.png" alt="Selected Furniture &amp; Finishes">
-        </section>
-
-        <!-- Section 5 -->
-        <section id="section5" class="container section-details  py-5">
-            <h1 id="section-title" class="post-title">Rendered View</h1>
-            <p>OPEN WORK AREA RENDERING</p>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="images/Rendered-view_1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item active">
-                        <img src="images/rendered_view-2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/rendered_view-3.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
     </div>
-    
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </html>

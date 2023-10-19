@@ -17,6 +17,19 @@
             line-height: 1.7;
             padding:33px;
         }
+
+        li.nav-item{
+            margin-right: 1.5em;
+        }
+
+        li.nav-item a {
+            color: #635A2C !important;
+            font-size: 1.1em;
+            font-weight: 500;
+            font-family: 'Montserrat';
+            border-bottom: 2px solid rgb(237, 180, 30) !important;
+           
+        }
         @media (max-width: 767px) {     
             #landing_page .main-section  {
                 padding-top:15px  !important;
@@ -24,6 +37,18 @@
             .section-details.py-5{
                 padding-top: 1em !important;
 
+            }
+            #hero_im{
+                width:52% !important;
+    
+            }
+            li.nav-item a {
+                color: #635A2C !important;
+                font-size: 1.1em;
+                font-weight: 500;
+                font-family: 'Montserrat';
+                border-bottom: 2px !important;
+             
             }
         }
         
@@ -140,18 +165,7 @@
             color: #635A2C !important;
         }
 
-        li.nav-item{
-            margin-right: 1.5em;
-        }
 
-        li.nav-item a {
-            color: #635A2C !important;
-            font-size: 1.1em;
-            font-weight: 500;
-            font-family: 'Montserrat';
-            border-bottom: 2px solid rgb(237, 180, 30) !important;
-           
-        }
 
         #hero1 {
             height: 300px;
@@ -212,6 +226,14 @@
 
             }
         }
+        @media (min-width: 1024px) {
+        div#navbarNav {
+            margin-left: auto;
+            order: 2;
+            flex-basis: fit-content;
+            flex-grow: 0;
+        }
+    }
 
         .portfolio-item {
             margin-bottom: 30px;
