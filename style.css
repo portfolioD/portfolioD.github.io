@@ -112,6 +112,16 @@
 
         }
 
+        .secondary{
+            background-color: #fff;
+            background-image: none;
+            
+        }
+        #navbarTogglerDemo01  li a{
+            font-size:.9em;
+
+        }
+
         .title-border-project {
             padding: 0px !important;
             border-bottom: 2px solid rgb(237, 180, 30) !important;
