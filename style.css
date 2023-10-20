@@ -17,6 +17,17 @@
             line-height: 1.7;
             padding:45px 33px;
         }
+        
+        .carousel{
+            padding-left:0px !important;
+            padding-right:0px !important;
+            padding-top: 0em !important;
+
+
+        }
+        .carousel-item img{
+            max-height:400px
+        }
 
         li.nav-item{
             margin-right: 1.5em;
@@ -30,7 +41,11 @@
             border-bottom: 2px solid rgb(237, 180, 30) !important;
            
         }
-        @media (max-width: 767px) {     
+        @media (max-width: 767px) {  
+            .carousel{
+                width:100% !important;
+            }
+
             #landing_page .main-section  {
                 padding-top:15px  !important;
             }
