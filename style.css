@@ -26,6 +26,30 @@
 
 
         }
+
+        .hero-image img.hero{
+            width: 100% !important
+
+        }
+
+        .hero-image{
+            padding: 0px !important;
+        
+
+        }
+        
+        #artist .project-title{
+            text-align: center;
+            
+        }
+        #artist .section-details {
+            border:0px !important
+        }
+
+        img.card-image-featured{
+            width:90% !important
+
+        }
      
         section#portfolio {
             border: 0px !important;
