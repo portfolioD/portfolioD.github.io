@@ -15,7 +15,7 @@
             color: #725A2C;
             font-size: 1.1em;
             line-height: 1.7;
-            padding:33px;
+            padding:45px 33px;
         }
 
         li.nav-item{
@@ -120,6 +120,9 @@
         #navbarTogglerDemo01  li a{
             font-size:.9em;
 
+        }
+        img.hero {
+            width: 70% !important;
         }
 
         .title-border-project {
