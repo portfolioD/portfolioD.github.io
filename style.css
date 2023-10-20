@@ -26,9 +26,9 @@
 
 
         }
-        #portfolio{
-            border:0px !important;
-
+     
+        section#portfolio {
+            border: 0px !important;
         }
         .carousel-item img{
             max-height:400px
