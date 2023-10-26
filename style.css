@@ -214,8 +214,10 @@
         }
 
         .column-details {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1rem !important;
+            font-size: 1.1em !important;
+            color: #725A2C;
+            line-height: 1.7;
+
         }
 
         .section-details {
@@ -253,9 +255,10 @@
         }
 
         .project-title {
-            margin-top: 20px;
-            font-size: 1.5rem;
+            margin-top: 10px;
+            font-size: 1.6em;
             color: #635A2C !important;
+            font-weight: 700;
         }
 
 
@@ -367,6 +370,22 @@
 
           .page-title {
             margin-bottom: 20px;
-            color:#635A2C;
+            color:#635A2C !important;
             font-family: 'Montserrat', sans-serif;
           }
+
+          .sidebar-section{
+            padding-left:0px;
+          }
+
+          #project_details  .post-title {
+            width: fit-content;
+            font-weight: 600;
+            font-size: 1.6em;
+            padding-top:10px !important;
+        }
+
+        
+        h3.title-border-project.post-sub-title {
+            font-size: 1.3em;
+        }
