@@ -4,6 +4,10 @@
             background-color: #ffffff;
            /* background-image: linear-gradient(#EDE2CD, #eae1cf);*/
         }
+
+        #project-details img.hero  {
+                width: 100% !important;
+        }
         .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
             color: #000!important;
             background-color: #f1f1f1!important;
