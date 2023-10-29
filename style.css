@@ -175,11 +175,14 @@
             background-image: linear-gradient(to bottom , #EDE2CD, #ecdec5);
         }
 
-        .container {
-            width: 70%;
-            margin: 0 auto;
-        }
+    
 
+
+        .hero_container{
+            width: 100%;
+            margin: 0 auto;
+
+        }
         /* Align navbar items to the center */
         .navbar-nav {
             text-align: center;
