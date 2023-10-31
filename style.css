@@ -111,6 +111,10 @@
                 width:100% !important;
             }
 
+            .carousel-item img{
+                max-height:190px
+            }
+
             #landing_page .main-section  {
                 padding-top:15px  !important;
             }
