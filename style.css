@@ -4,6 +4,11 @@
             background-color: #ffffff;
            /* background-image: linear-gradient(#EDE2CD, #eae1cf);*/
         }
+
+        #linkContainer {
+            margin-top: 20px; /* Adjust the margin to create space between the logo and the hyperlink image */
+          }
+          
         #linkImage {
             width: 100px; /* Adjust the width of your hyperlink image */
             height: auto; /* Maintain aspect ratio */
