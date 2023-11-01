@@ -5,10 +5,19 @@
            /* background-image: linear-gradient(#EDE2CD, #eae1cf);*/
         }
 
+        
+        div#project-details {
+            position: absolute;
+            width: 50%;
+            margin-left: 20%;
+            width: 60%;
+            margin-right: auto;
+        }
+
         #linkContainer {
             margin-top: 20px; /* Adjust the margin to create space between the logo and the hyperlink image */
           }
-          
+
         #linkImage {
             width: 100px; /* Adjust the width of your hyperlink image */
             height: auto; /* Maintain aspect ratio */
