@@ -4,6 +4,10 @@
             background-color: #ffffff;
            /* background-image: linear-gradient(#EDE2CD, #eae1cf);*/
         }
+        #linkImage {
+            width: 100px; /* Adjust the width of your hyperlink image */
+            height: auto; /* Maintain aspect ratio */
+          }
 
         #project_details img.hero  {
                 width: 100% !important;
