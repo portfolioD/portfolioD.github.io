@@ -5,15 +5,24 @@
            /* background-image: linear-gradient(#EDE2CD, #eae1cf);*/
         }
 
-        @media (min-width: 768px) {  
-            div#project-details {
+        @media (max-width: 768px) {  
+            .project-details {
                 position: absolute;
                 width: 50%;
                 margin-left: 20%;
                 width: 60%;
                 margin-right: auto;
             }
-          
+            .project-title
+            {
+                font-size: 1.34em;
+            }
+            .h3.title-border-project.post-sub-title {
+                font-size: 1.2em;
+            }
+            {
+                font-size: 1.34em;
+            }
         }
  
 

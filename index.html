@@ -84,7 +84,14 @@
             <div class="row">
               <!-- Sidebar Section -->
               <div class="col-lg-4 col-md-3 sidebar-section">
-                <img src="artist-image.jpg" alt="Profile Image" class="img-fluid mb-4">
+                <picture>
+                  <!-- WebP format for modern browsers -->
+                  <source srcset="artist-image.webp" type="image/webp" class="img-fluid mb-4">
+                  
+                  <!-- Fallback for other formats (e.g., JPEG) -->
+                  <img src="artist-image.jpg" alt="Profile Image" class="img-fluid mb-4">
+                </picture>
+                
               </div>
               <!-- Main Section -->
               <div class="col-lg-8 col-md-7 main-section">
