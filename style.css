@@ -20,12 +20,30 @@
             .h3.title-border-project.post-sub-title {
                 font-size: 1.2em;
             }
-            {
-                font-size: 1.34em;
-            }
+       
         }
  
+        .section-details ,.section-details-tab{
+            padding-top:20px;
+        }
+ 
+        .section-details-tab .nav-pills ,.section-details-tab .nav-link {
+            border-radius: 0rem !important ;
+        }
 
+        #project-details-section .nav-tabs {
+            margin-bottom: 20px;
+            flex-wrap: nowrap; /* Ensure tabs don't wrap to the next line */
+            border-bottom:0px !important;
+        }
+        #project-details-section .nav-item {
+            margin-bottom: 0; /* Remove bottom margin for better alignment */
+        }
+
+        #project-details-section .nav-link {
+            padding: 10px 15px; /* Adjust padding for better visual appearance */
+             /* Set the desired text color */
+        }
         #linkContainer {
             margin-top: 20px; /* Adjust the margin to create space between the logo and the hyperlink image */
           }
@@ -127,15 +145,30 @@
         li.nav-item{
             margin-right: 1.5em;
         }
+        .section-details-tab  li.nav-item{ 
+            margin-right: 0em;
+
+        }
 
         li.nav-item a {
             color: #635A2C !important;
             font-size: 1.1em;
             font-weight: 500;
             font-family: 'Montserrat';
-            border-bottom: 2px solid rgb(237, 180, 30) !important;
            
         }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            background-color:   rgb(237, 180, 30) !important; 
+        }
+
+   
+  
+        a.no-change-color.nav-pills a.nav-link.active,
+       a.no-change-color.nav-pills a.nav-link:hover,
+        a.no-change-color.nav-pills a.nav-link:focus {
+            background-color: transparent !important; /* Set background color to transparent for active, hover, and focus states */
+        }
+
         @media (max-width: 767px) {  
             .carousel{
                 width:100% !important;
@@ -259,6 +292,9 @@
 
         .section-details {
             margin-bottom: 40px;
+           
+        }
+        div#project-details-section {
             border: 1px solid #EDE2CD;
         }
         @media (max-width: 767px) {
