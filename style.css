@@ -20,6 +20,10 @@
             .h3.title-border-project.post-sub-title {
                 font-size: 1.2em;
             }
+            img.hero{
+                display:none;
+
+            }
        
         }
  
