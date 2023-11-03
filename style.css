@@ -97,9 +97,10 @@
         }
 
         .portfolio-button{
-            
-      
-
+            background-color: #D7C378 !important;
+            width:200px;
+            color : rgb(0,0,0)  !important;
+            transition: opacity 0.3s ease-in-out 0s;
         }
 
         .position-relative {
