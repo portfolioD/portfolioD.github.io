@@ -61,12 +61,12 @@
 
     <!-- Project Details Tabs -->
     <div id="project-details-section" class="container container-fluid p-0">
-        <div class="row">
+        <div class="row container-fluid py-3">
             <!-- Tab Navigation -->
             <div class="col-lg-2 project-tab-col">
                 <div class="container portfolio-navbar hero">
-                    <div id="navbarTogglerDemo01" class="py-3">
-                        <ul class="nav flex-column nav-pills  section-details-tab">
+                    <div id="navbarTogglerDemo01" >
+                        <ul class="nav flex-column nav-pills  section-details-tab ">
                             <li class="nav-item">
                                 <a class="nav-link active  no-change-color" data-toggle="tab" href="#section1">Project</a>
                             </li>
@@ -210,18 +210,23 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="text-muted">
         <div class="container">
-            <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+          <p class="float-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>&copy; 2023 Your Website. All Rights Reserved.</p>
         </div>
-    </footer>
+      </footer>
 
+    </body>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         // Calculate and set max height for tab content
-        $(document).ready(function () {
+        /*$(document).ready(function () {
           // Find the maximum height among tab panes
           var maxHeight = 0;
       
@@ -234,8 +239,7 @@
       
           // Set the max height for tab content
           $('.tab-pane').height(maxHeight);
-        });
+        });*/
       </script>
-    </body>
 </html>
 

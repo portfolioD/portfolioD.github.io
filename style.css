@@ -26,7 +26,16 @@
             }
        
         }
- 
+        @media (max-width: 768px) {
+            .project-tab-col .flex-column {
+                flex-direction: row !important;
+            }
+        }
+
+        .project-tab-col{
+            padding-top:20px;
+        }
+
         .section-details ,.section-details-tab{
             padding-top:20px;
         }
@@ -211,6 +220,12 @@
             #landing_page .section-details img {
             margin-top: 0px !important;
             }
+            .project-title {     
+                font-size: 1.4em !important;
+            }
+            .post-title {     
+                font-size: 1.3em !important;
+            }
         }
         #landing_page .page-title
         {  
@@ -305,7 +320,6 @@
         /* Your CSS styles for smaller screens go here */
             .section-details {
                 margin-bottom: 20px;
-                width:90% !important
             }
             .project-title {
                 margin-top: 1px !important;
@@ -464,5 +478,15 @@
 
         
         h3.title-border-project.post-sub-title {
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
+        .text-muted {
+            color: #6c757d!important;
+        }
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        section-details::-webkit-scrollbar{
+            display: none;
+          }
