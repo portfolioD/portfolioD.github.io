@@ -602,3 +602,9 @@
         .ms-2 {
             margin-left: .5rem!important;
         }
+
+        .lead{
+            font-family: Arial, sans-serif  !important;
+            color: #6c757d !important;
+        }
+       
