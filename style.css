@@ -483,12 +483,26 @@
         footer {
             padding-top: 3rem;
             padding-bottom: 3rem;
+            background-image: linear-gradient(to bottom , #EDE2CD, #ecdec5);
         }
+        .footer p{
+                margin-bottom: 3px !important;
+                margin-top: 3px !important;
+        }
+
         section-details::-webkit-scrollbar{
             display: none;
           }
           .featurette-divider {
             margin: 5rem 0;
+        }
+
+        #jumbotron .featurette-divider {
+            margin: 2rem 0;
+        }
+        .jumbotron{
+            background-color: #d7aa6457;
+            
         }
 
         #jumbotron.container {
