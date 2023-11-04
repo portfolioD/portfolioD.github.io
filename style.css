@@ -504,6 +504,9 @@
             background-color: #d7aa6457;
             
         }
+        .jumbotron h1 {
+          color :  #947400;
+        }
 
         #jumbotron.container {
             padding-right: 0px !important;
