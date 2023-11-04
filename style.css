@@ -310,10 +310,6 @@
 
         }
 
-        .section-details {
-            margin-bottom: 40px;
-           
-        }
         div#project-details-section {
             border: 1px solid #EDE2CD;
         }
@@ -490,4 +486,70 @@
         }
         section-details::-webkit-scrollbar{
             display: none;
+          }
+          .featurette-divider {
+            margin: 5rem 0;
+        }
+
+        #jumbotron.container {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .breadcrumb {
+            background-color: transparent;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-bottom: 1.5rem;
+            padding: 0;
+        }
+        .mb-0 {
+            margin-bottom: 0!important;
+        }
+        .py-5 {
+            padding-bottom: 1.25rem!important;
+            padding-top: 1.25rem!important;
+        }
+
+        a.text-beige-400{
+          color :  rgb(237, 180, 30) !important
+        }
+
+        .section-divider {
+            text-align: center;
+            margin: 30px 0;
+          }
+      
+          .section-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+      
+          .section-title {
+            background-color: #fff;
+            padding: 0 10px;
+            color:#635A2C !important;
+            font-size: 1.6em;
+            font-family: 'Montserrat', sans-serif;
+          }
+      
+          .divider-line {
+            flex-grow: 1;
+            height: 1px;
+            background-color:  rgba(0,0,0,.1);
+            margin: 0 10px;
+          }
+      
+          /* Featurettes */
+          .featurette-divider {
+            margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+          }
+      
+          /* Thin out the marketing headings */
+          .featurette-heading {
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -.05rem;
           }

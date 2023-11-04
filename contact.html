@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,15 @@
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body id = "landing_page">
+
+<body id="landing_page">
+  <!-- Navbar -->
   <div class="container portfolio-navbar hero">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div id="hero_im">
-          <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="Desktop Image" class="img-fluid">
-          </a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Desktop Image" class="img-fluid">
+        </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,114 +28,131 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#section3">Contact</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#section4">Media</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#section5">Thesis</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section5">Thesis</a>
+            </li>
           </ul>
       </div>
     </nav>
   </div>
 
-    
-        <!-- Section 2 -->
-        <section id="portfolio" class="container section-details">
-          
-          <div class="row">
-                    <!-- Content -->
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Sidebar Section -->
-              <div class="col-lg-4 col-md-3 sidebar-section">
-                <picture>
-                  <!-- WebP format for modern browsers -->
-                  <source srcset="artist-image.webp" type="image/webp" class="img-fluid mb-4">
-                  
-                  <!-- Fallback for other formats (e.g., JPEG) -->
-                  <img src="artist-image.jpg" alt="Profile Image" class="img-fluid mb-4">
-                </picture>
-                
-              </div>
-              <!-- Main Section -->
-              <div class="col-lg-8 col-md-7 main-section">
-                <div class ="row">
-                  <h4 class="page-title">About Me</h4>
-                  <p>I am passionate about creating beautifully purposeful spaces.
-                    My creative approach is informed by my enthusiasm for historic preservation, the history of architecture and interiors, and timeless, classic design. 
-                    I firmly believe in designing for the greater good through sustainable methods and practices. 
-                    Upon completing further education and work experience, I plan to earn NCIDQ Certification and become an ASID Professional Member.    
-                    I completed my graduation from the New York School of Interior Design with an Associate in Applied Science (AAS) in Interior Design and a Basic Interior Design Certificate (BID).
-                    I am an Allied Member of the prestigious American Society of Interior Designers. </p>
-                    <a href = "portfolio.html">
-                    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top portfolio-button">
-                      <i class="fa "></i> Portfolio
-                    </button>
-                  </a>
-                </div>
-  
-                <div class="row">
-                  <h5 class="page-title">My Skills</h5>      
-                </div>      
-                <div class="row">
-                  <div class="col-md-6">
-                  <h5 class="sub-title">Design Skills</h5>
-                    <address>
-                      <li>Concept Development</li>
-                      <li>Space Planning</li>
-                      <li>Color Theory</li>
-                      <li>Material Sourcing</li>
-                      <li>Presentations</li>
-                      <li>Studio Designer</li>
-                      <li>Residential Design</li>
-                      <li>Commercial Design</li>
-                    </address>
-                  </div>
-                  <div class="col-md-6">
-                    <h5 class="sub-title">Computer Skills</h5>
-                    <address>
-                      <ul>
-                      <li>AutoCAD</li>
-                      <li>Revit</li>
-                      <li>Microsoft Office</li>
-                      <li>Adobe Photoshop</li>
-                      <li>Adobe InDesign</li>
-                      <li>Studio Designer</li>
-                    </ul>
-                    </address>
-                  </div>
-                </div>
+  <!-- BREADCRUMB -->
+  <nav class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 
+          <!-- Breadcrumb -->
+          <ol class="breadcrumb mb-0 fs-xs text-gray-400">
+            <li class="breadcrumb-item">
+              <a class="text-beige-400" href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">
+              Portfolio
+            </li>
+          </ol>
 
-             </div>
-          </div>
-            <!-- Add more portfolio items as needed -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section 2 -->
+  <section id="portfolio" class="container section-details">
+    <div class="row featurette">
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="artist-image.jpg" alt="Placeholder: 500x500">
+      </div>
+
+      <!-- Main Section -->
+      <div class="col-md-7 main-section">
+        <div class="row">
+          <h4 class="page-title">Virginia Kestel</h4>
+          <p class="text-muted">I am passionate about creating beautifully purposeful spaces. My creative approach is informed by my enthusiasm for historic preservation, the history of architecture and interiors, and timeless, classic design. I firmly believe in designing for the greater good through sustainable methods and practices. Upon completing further education and work experience, I plan to earn NCIDQ Certification and become an ASID Professional Member. I completed my graduation from the New York School of Interior Design with an Associate in Applied Science (AAS) in Interior Design and a Basic Interior Design Certificate (BID). I am an Allied Member of the prestigious American Society of Interior Designers.</p>
+          <a href="portfolio.html">
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top portfolio-button">
+              <i class="fa "></i> Portfolio
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-carousel" class="container section-details">
       
-          </div>
-
-      </section>
-
+        <!-- Example Section -->
+      <div class="section-divider">
+        <div class="section-title-container">
+          <span class="divider-line"></span>
+          <span class="section-title">My Skills</span>
+          <span class="divider-line"></span>
+        </div>
+      </div>
+      <div class="row featurette">
+        <div class="col-md-4">
+          <h5 class="sub-title">Design Skills</h5>
+          <address class="text-muted">
+            <li>Concept Development</li>
+            <li>Space Planning</li>
+            <li>Color Theory</li>
+            <li>Material Sourcing</li>
+            <li>Presentations</li>
+            <li>Studio Designer</li>
+            <li>Residential Design</li>
+            <li>Commercial Design</li>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h5 class="sub-title">Computer Skills</h5>
+          <address class="text-muted">
+            <ul>
+              <li>AutoCAD</li>
+              <li>Revit</li>
+              <li>Microsoft Office</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe InDesign</li>
+              <li>Studio Designer</li>
+            </ul>
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h5 class="sub-title">Languages</h5>
+          <address class="text-muted">
+            <ul>
+              <li>English</li>
+              <li>French</li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    </section>
 
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-          <p>&copy; 2023 Your Website. All Rights Reserved.</p>
-      </div>
+  </body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+    </div>
   </footer>
-</html>
+  </html>
+```
+
+This should be easier to read now. Let me know if you need further adjustments!
