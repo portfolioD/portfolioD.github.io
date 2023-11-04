@@ -584,7 +584,7 @@
 
         .text-reset {
             --bs-text-opacity: 1;
-            color: inherit!important;
+            color: #635A2C !important;
         }
         .btn-link {
             font-weight: 400;
