@@ -553,3 +553,34 @@
             line-height: 1;
             letter-spacing: -.05rem;
           }
+
+          .btn-outline-white {
+            border-color: #fff;
+            color: #fff
+        }
+
+        .btn {
+            height: calc(3.25rem + 2px);
+            white-space: nowrap;
+        }
+
+        .text-reset {
+            --bs-text-opacity: 1;
+            color: inherit!important;
+        }
+        .btn-link {
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .stretched-link:after {
+            bottom: 0;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .ms-2 {
+            margin-left: .5rem!important;
+        }
