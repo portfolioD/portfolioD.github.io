@@ -254,16 +254,9 @@
         /* Add more custom styles as needed */
         /* Reduce the width of the navbar and content to 80% */
         .navbar {
-            /* Change navbar color to light */
             margin: 0 auto;
-            /*background: #FFAA01;*/
-             /*background: #FFAA01; #ddc597 */
-            background: #EDE2CD;
-            background-image: linear-gradient(to bottom , #EDE2CD, #ecdec5);
+            background: #ffffff8f;
         }
-
-    
-
 
         .hero_container{
             width: 100%;
@@ -501,7 +494,7 @@
             margin: 2rem 0;
         }
         .jumbotron{
-            background-color: #d7aa6457;
+            background-color: #F5F1EB;
             
         }
         .jumbotron h1 {
