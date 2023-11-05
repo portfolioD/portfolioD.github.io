@@ -215,7 +215,6 @@
         
         #landing_page .section-details img {
              width: 100%; 
-             margin-top:50px;
         }
         @media (max-width: 767px) {     
             #landing_page .section-details img {
