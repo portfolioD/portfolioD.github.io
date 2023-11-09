@@ -56,6 +56,13 @@
         #project-details-section .nav-link {
             padding: 10px 15px; /* Adjust padding for better visual appearance */
              /* Set the desired text color */
+ 
+        }
+   
+        #project-details-section a.nav-link{
+            color: #635A2C!important;
+            text-decoration: none;
+            background-color: transparent;
         }
         #linkContainer {
             margin-top: 20px; /* Adjust the margin to create space between the logo and the hyperlink image */
@@ -152,9 +159,10 @@
         section#portfolio {
             border: 0px !important;
         }
-        .carousel-item img{
+        .carousel-item img , .hero img{
             max-height:400px
         }
+     
 
         li.nav-item{
             margin-right: 1.5em;
