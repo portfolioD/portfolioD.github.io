@@ -1,0 +1,109 @@
+[
+  {
+    "Project": "ARITZIA HEADQUARTERS",
+    "Concept": {
+      "title": "CONCEPT",
+      "sections": ["Project", "Floor Plan", "Isoemetric View", "Material", "Rendered View"],
+      "hero": {
+        "src": "hero_isometric.jpg",
+        "alt": "ARITZIA HEADQUARTERS"
+      },
+      "value": {
+        "Objective": "Design the 36th and 37th floor office spaces of Aritzia's NYC headquarters",
+        "Type": "Contract/Office Design",
+        "Location": "346 Main Street, New York City, New York",
+        "Area": "6,972 SF",
+        "Description": "Aritzia is an upscale women's fashion brand. A juxtaposition of trendy yet timeless styles embodies their clothing, focusing on everyday luxury. Following the brand's aesthetic of neutral tones with a modern and minimalist look, the office design brings an elevated touch while being functional. A collaborative and open work area promotes creativity and fosters productivity."
+      }
+    }
+  },
+  {
+    "Project": "BRIGITTE BARDOT'S HOME",
+    "Concept": {
+      "title": "CONCEPT",
+      "sections": ["Project", "Floor Plan", "Isoemetric View", "Material", "Rendered View"],
+      "hero": {
+        "src": "hero-brigitte-lr.png",
+        "alt": "Brigitte Bardot's Living Room"
+      },
+      "value": {
+        "Objective": "Design the lighting plan and make selections for three spaces: the living area, kitchen, and dining room",
+        "Type": "Residential Design",
+        "Location": "Côte d'Azur, France",
+        "Area": "850 SF",
+        "Description": "French Country embodies charm, elegance, warmth, and comfort. There is a juxtaposition of rusticity yet refinement. Through carefully planned and selected lighting and fixtures, Mademoiselle Bardot's home in the south of France becomes a place of relaxation as well as gathering. Lighting supports overall needs and tasks while enhancing the ambiance of her villa."
+      }
+    }
+  },
+  {
+    "Project": "CHEZ AUDREY",
+    "Concept": {
+      "title": "CONCEPT",
+      "sections": ["Project", "Floor Plan", "Isoemetric View", "Material", "Rendered View"],
+      "hero": {
+        "src": "hero-ca-ground-level-perspective.jpg",
+        "alt": "CHEZ AUDREY"
+      },
+      "value": {
+        "Objective": "Design a celebrity restaurant with a strong, memorable brand inspired by Audrey Hepburn and her style",
+        "Type": "Hospitality Design",
+        "Location": "Soho, New York",
+        "Area": "2,500 SF",
+        "Description": "Inspired by the song “La Vie en Rose,” which Audrey Hepburn sang in SABRINA (1954), ideas of love, warmth, and \"seeing the world through rose-colored glasses\" define the restaurant. Chez Audrey (“the house of Audrey\") incorporates an authentic bistro/café design that offers authentic French fare. Guests are sure to leave with an outlook of seeing the beauty in each and every day."
+      }
+    }
+  },
+  {
+    "Project": "ARTIST RESIDENCY",
+    "Concept": {
+      "title": "CONCEPT",
+      "sections": ["Project", "ADJACENCY MATRIX", "BLOCK PLANS", "Material", "Rendered View"],
+      "hero": {
+        "src": "artist_residency.png",
+        "alt": "ARTIST RESIDENCY"
+      },
+      "value": {
+        "Objective": "Design an adaptive reuse firehouse as an artist residency for the owner and guest artists that serves their needs and fosters creativity",
+        "Location": "159 E 87th St, New York, NY",
+        "Area": "5,000 SF",
+        "Description": "The artist residency provides a dynamic space that encourages creative pursuits. With zones dedicated to dining, living, working, and private retreats, the design facilitates both collaborative and solitary activities. Emphasizing privacy where needed with thoughtful adjacencies, the residency supports a seamless flow for daily routines and artistic endeavors."
+      }
+    }
+  },
+  {
+    "Project": "TRADITIONAL LIVING ROOM",
+    "Concept": {
+      "title": "CONCEPT",
+      "sections": ["Project", "ADJACENCY MATRIX", "BLOCK PLANS", "Material", "Rendered View"],
+      "hero": {
+        "src": "hero_isometric.jpg",
+        "alt": "TRADITIONAL LIVING ROOM"
+      },
+      "value": {
+        "Objective": "Design a living room in a traditional, Louis XVI style that meets their needs of aesthetic and comfort",
+        "Type": "Residential Design",
+        "Location": "Savannah, Georgia",
+        "Area": "250 SF",
+        "Description": "French Neoclassical style, also known as Louis XVI, emphasizes qualities of light scale, geometric forms, classical motifs, and fine materials. The clients, a middle-aged couple who are historic preservationists at heart, own a townhome with original interior architectural details. They desire a living room with a Louis XVI essence that suits today’s lifestyle."
+      }
+    }
+  },
+  {
+    "Project": "THE ASHFORD RESIDENCE",
+    "Concept": {
+      "title": "CONCEPT",
+      "sections": ["Project", "ADJACENCY MATRIX", "BLOCK PLANS", "Material", "Rendered View"],
+      "hero": {
+        "src": "hero_ashword_ar.jpg",
+        "alt": "THE ASHFORD RESIDENCE"
+      },
+      "value": {
+        "Objective": "Design a single family house for a family of four, considering accessibility and universal design needs",
+        "Type": "Residential Design",
+        "Location": "Black Mountain, NC",
+        "Area": "3,000 SF",
+        "Description": "James and Betty Ashford's fondness towards artistic outlets, coupled with inspiration from the natural surroundings of Black Mountain, bring to life the design of their home. Warmth, creativity, and gathering are created through autumnal colors, natural textures and patterns. Their charming abode has vintage character and is a place of solace and respite."
+      }
+    }
+  }
+]
