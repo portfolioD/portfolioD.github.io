@@ -490,11 +490,12 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
             background: #F5F1EB !important;
-            color: #947400 !important;
+            
         }
         .footer p{
                 margin-bottom: 3px !important;
                 margin-top: 3px !important;
+                color: #947400 !important;
         }
 
         section-details::-webkit-scrollbar{
