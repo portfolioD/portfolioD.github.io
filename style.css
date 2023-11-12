@@ -2,9 +2,15 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #ffffff;
-           /* background-image: linear-gradient(#EDE2CD, #eae1cf);*/
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 100% viewport height */
         }
-
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         @media (max-width: 768px) {  
             .project-details {
                 position: absolute;
@@ -120,7 +126,7 @@
             color: #725A2C;
             font-size: 1.1em;
             line-height: 1.7;
-            padding:45px 33px;
+            padding:5px 33px;
         }
         
         .carousel{
@@ -128,10 +134,11 @@
             padding-right:0px !important;
             padding-top: 0em !important;
             border:0px !important;
-
-
         }
 
+        .no-border{
+            border:0px !important;
+        }
         .hero-image img.hero{
             width: 100% !important
 
@@ -235,9 +242,8 @@
                 font-size: 1.3em !important;
             }
         }
-        #landing_page .page-title
+        #landing_page .page-title , #contact_page .page-title
         {  
-          border-bottom: 2px solid rgb(237, 180, 30) !important;
           width: fit-content;
           font-weight: 600;
           font-size:  1.6em;
@@ -484,6 +490,7 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
             background-image: linear-gradient(to bottom , #EDE2CD, #ecdec5);
+            color: rgba(51,51,51,1) !important;
         }
         .footer p{
                 margin-bottom: 3px !important;
