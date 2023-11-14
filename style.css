@@ -483,6 +483,8 @@
         h3.title-border-project.post-sub-title {
             font-size: 1.2em;
         }
+
+
         .text-muted {
             color: #6c757d!important;
         }
@@ -514,7 +516,11 @@
             
         }
         .jumbotron h1 {
-          color :  #947400;
+          color :  #ae9536c7;
+        }
+
+        .jumbotron .text-muted {
+            color: #707070 !important;
         }
 
         #jumbotron.container {
