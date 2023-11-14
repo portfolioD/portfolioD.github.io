@@ -42,6 +42,10 @@
             padding-top:20px;
         }
 
+        #landing-page .section-details{
+            padding-top:0px !important ;
+        }
+ 
         .section-details ,.section-details-tab{
             padding-top:20px;
         }
