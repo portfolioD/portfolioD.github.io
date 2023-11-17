@@ -23,6 +23,16 @@
           "useTemplate" : "isometric"
         },
         {
+          "name": "SECTIONAL PERSPECTIVE",
+          "isFirst": false,
+          "isPresent": true,
+          "useTemplate" : "floor-or-block-plans",
+          "img": {
+            "src": "../images/material_artizia_headquarter.png",
+            "alt": "First Image Description"
+          }         
+        },
+        {
           "name": "Material",
           "isFirst": false,
           "isPresent": true,
@@ -33,10 +43,21 @@
           }
         },
         {
+          "name": "Furniture & Finish Plans",
+          "isFirst": false,
+          "isPresent": true,
+          "useTemplate" : "floor-or-block-plans",
+          "img": {
+            "src": "../images/material_artizia_headquarter.png",
+            "alt": "First Image Description"
+          }         
+        },
+
+        {
           "name": "Rendered View",
           "isFirst": false,
           "isPresent": true,
-          "useTemplate" : "render-in-carousel",
+          "useTemplate": "render-in-carousel",
           "content": {
             "carousel": [
               {
@@ -55,8 +76,10 @@
                 "isActive": false
               }
             ]
-          }
+          },
+          "highlightText": "The office accommodates 24 full-time employees and has a flexible collaboration working area to allow for visiting employees from offices in other cities. The open workspace can be converted into an event space for events held by Aritzia to showcase products and engage with clients and other design professionals. A mezzanine overlooks the open workspace, adjacent to windows that maximize daylighting in the workspace and promote well-being and productivity."
         } ,   
+
         {
           "name": "SELECTED FF&E",
           "isPresent": true,
