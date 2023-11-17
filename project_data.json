@@ -7,27 +7,31 @@
         {
           "name": "Project",
           "isFirst": true,
-          "type" : "project"
+          "useTemplate" : "project"
         },
         {
           "name": "Floor Plan",
           "isFirst": false,
-          "type" : "floor-or-block-plans"
+          "useTemplatee" : "floor-or-block-plans"
         },
         {
           "name": "Isoemetric View",
           "isFirst": false,
-          "type" : "isometric"
+          "useTemplate" : "isometric"
         },
         {
           "name": "Material",
           "isFirst": false,
-          "type" : "plain section tbd"
+          "useTemplate" : "resource",
+          "img": {
+            "src": "../images/material_artizia_headquarter.png",
+            "alt": "First Image Description"
+          }
         },
         {
           "name": "Rendered View",
           "isFirst": false,
-          "type" : "render-in-carousel",
+          "useTemplate" : "render-in-carousel",
           "content": {
             "carousel": [
               {
@@ -46,6 +50,20 @@
                 "isActive": false
               }
             ]
+          }
+        } ,
+        {
+          "name": "FURNITURE/FINISH PLAN",
+          "isPresent": true,
+          "useTemplate" : "floor-or-block-plans"
+        },   
+        {
+          "name": "SELECTED FF&E",
+          "isPresent": true,
+          "useTemplate" : "furnishing",
+          "img": {
+            "src": "../images/furnishing_artizia_headquarter.png",
+            "alt": "First Image Description"
           }
         }
       ],
@@ -70,41 +88,45 @@
         {
           "name": "Project",
           "isFirst": true,
-          "type" : "project"
+          "useTemplate" : "project"
         },
         {
           "name": "Floor Plan",
           "isFirst": false,
-          "type" : "floor-or-block-plans"
+          "useTemplate" : "floor-or-block-plans"
         },
         {
           "name": "Isoemetric View",
           "isFirst": false,
-          "type" : "isometric"
+          "useTemplate" : "isometric"
         },
         {
-          "name": "Material",
+          "name": "Lighting",
           "isFirst": false,
-          "type" : "plain section tbd"
+          "useTemplate" : "material",
+          "img": {
+            "src": "../images/lighting_brigitte_bardots_home.png",
+            "alt": "First Image Description"
+          }
         },
         {
-          "name": "Rendered View",
+          "name": "Perspective View",
           "isFirst": false,
-          "type" : "render-in-carousel",
+          "useTemplate" : "render-in-carousel",
           "content": {
             "carousel": [
               {
-                "src": "../images/rendered_lobby.png",
+                "src": "../images/perspective_view_living_area.png",
                 "alt": "First Image Description",
                 "isActive": true
               },
               {
-                "src": "../images/rendered_office.png",
+                "src": "../images/perspective_view_dinning_area.png",
                 "alt": "Second Image Description",
                 "isActive": false
               },
               {
-                "src": "../images/rendered_kitchen.png",
+                "src": "../images/perspective_view_kitchen_area.png",
                 "alt": "Third Image Description",
                 "isActive": false
               }
@@ -133,27 +155,27 @@
         {
           "name": "Project",
           "isFirst": true,
-          "type" : "project"
+          "useTemplate" : "project"
         },
         {
           "name": "Floor Plan",
           "isFirst": false,
-          "type" : "floor-or-block-plans"
+          "useTemplate" : "floor-or-block-plans"
         },
         {
           "name": "Isoemetric View",
           "isFirst": false,
-          "type" : "isometric"
+          "useTemplate" : "isometric"
         },
         {
           "name": "Material",
           "isFirst": false,
-          "type" : "plain section tbd"
+          "useTemplate" : "plain section tbd"
         },
         {
           "name": "Rendered View",
           "isFirst": false,
-          "type" : "render-in-carousel",
+          "useTemplate" : "render-in-carousel",
           "content": {
             "carousel": [
               {
@@ -173,10 +195,19 @@
               }
             ]
           }
+        }, 
+        {
+          "name": "SELECTED FF&E",
+          "isPresent": true,
+          "useTemplate" : "material",
+          "img": {
+            "src": "../images/furnishing_chez_audrey.png",
+            "alt": "Selected FF&E"
+          }
         }
       ],
       "hero": {
-        "src": "hero-ca-ground-level-perspective.jpg",
+        "src": "hero_chez_audrey.png",
         "alt": "CHEZ AUDREY"
       },
       "value": {
@@ -196,27 +227,27 @@
         {
           "name": "Project",
           "isFirst": true,
-          "type" : "project"
+          "useTemplate" : "project"
         },
         {
           "name": "Floor Plan",
           "isFirst": false,
-          "type" : "floor-or-block-plans"
+          "useTemplate" : "floor-or-block-plans"
         },
         {
           "name": "Isoemetric View",
           "isFirst": false,
-          "type" : "isometric"
+          "useTemplate" : "isometric"
         },
         {
           "name": "Material",
           "isFirst": false,
-          "type" : "plain section tbd"
+          "useTemplate" : "material"
         },
         {
           "name": "Rendered View",
           "isFirst": false,
-          "type" : "render-in-carousel",
+          "useTemplate" : "render-in-carousel",
           "content": {
             "carousel": [
               {
@@ -236,10 +267,20 @@
               }
             ]
           }
+          
+        },
+        {
+          "name": "SELECTED FF&E",
+          "isPresent": true,
+          "useTemplate" : "material",
+          "img": {
+            "src": "../images/furnishing_artist_residency.png",
+            "alt": "Selected FF&E"
+          }
         }
       ],
       "hero": {
-        "src": "artist_residency.png",
+        "src": "hero_artist_residency.png",
         "alt": "ARTIST RESIDENCY"
       },
       "value": {
@@ -257,27 +298,28 @@
       "sections":[
         {
           "name": "Project",
-          "isFirst": true
+          "isFirst": true,
+          "useTemplate": "project"
         },
         {
           "name": "ADJACENCY MATRIX",
           "isFirst": false,
-          "type" : "section-2-col" 
+          "useTemplate" : "section-2-col" 
         },
         {
           "name": "BLOCK PLANS",
           "isFirst": false,
-          "type" : "section-2-col" 
+          "useTemplate"  : "section-2-col" 
         },
         {
           "name": "Material",
           "isFirst": false,
-          "type" : "plain section tbd"
+          "useTemplate" : "plain section tbd"
         },
         {
           "name": "Rendered View",
           "isFirst": false,
-          "type" : "render-in-carousel",
+          "useTemplate" : "render-in-carousel",
           "content": {
             "carousel": [
               {
@@ -297,10 +339,19 @@
               }
             ]
           }
+        },
+        {
+          "name": "SELECTED FF&E",
+          "isPresent": true,
+          "useTemplate" : "material",
+          "img": {
+            "src": "../images/furnishing_tradition_living_room.png",
+            "alt": "Selected FF&E"
+          }
         }
       ],
       "hero": {
-        "src": "hero_isometric.jpg",
+        "src": "hero_tradition_living_room.jpg",
         "alt": "TRADITIONAL LIVING ROOM"
       },
       "value": {
@@ -319,27 +370,28 @@
       "sections":[
         {
           "name": "Project",
-          "isFirst": true
+          "isFirst": true,
+          "useTemplate" : "project" 
         },
         {
           "name": "ADJACENCY MATRIX",
           "isFirst": false,
-          "type" : "section-2-col" 
+          "useTemplate" : "material" 
         },
         {
           "name": "BLOCK PLANS",
           "isFirst": false,
-          "type" : "section-2-col" 
+          "useTemplate" : "floor-or-block-plans" 
         },
         {
           "name": "Material",
           "isFirst": false,
-          "type" : "plain section tbd"
+          "useTemplate" : "material" 
         },
         {
           "name": "Rendered View",
           "isFirst": false,
-          "type" : "render-in-carousel",
+          "useTemplate" : "render-in-carousel",
           "content": {
             "carousel": [
               {
