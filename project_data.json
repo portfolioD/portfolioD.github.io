@@ -126,7 +126,7 @@
                 "isActive": true
               },
               {
-                "src": "../images/perspective_view_dinning_area.png",
+                "src": "../images/perspective_view_dining_area.png",
                 "alt": "Second Image Description",
                 "isActive": false
               },
@@ -365,7 +365,7 @@
         }
       ],
       "hero": {
-        "src": "hero_tradition_living_room.jpg",
+        "src": "hero_tradition_living_room.png",
         "alt": "TRADITIONAL LIVING ROOM"
       },
       "value": {
