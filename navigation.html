@@ -1,0 +1,14 @@
+<!-- navigation.html -->
+<div class="container portfolio-navbar hero">
+    <div id="navbarTogglerDemo01">
+        <ul class="nav flex-column nav-pills section-details-tab">
+            {{#sections}}
+                {{#isPresent}}
+                    <li class="nav-item">
+                    <a class="nav-link {{#isFirst}}active{{/isFirst}} no-change-color" data-toggle="tab" href="#{{id}}">{{name}}</a>
+                    </li>
+                {{/isPresent}}  
+            {{/sections}}
+        </ul>
+    </div>
+</div>
