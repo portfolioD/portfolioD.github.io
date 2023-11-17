@@ -102,9 +102,9 @@
         "Description": "Aritzia is an upscale women's fashion brand. A juxtaposition of trendy yet timeless styles embodies their clothing, focusing on everyday luxury. Following the brand's aesthetic of neutral tones with a modern and minimalist look, the office design brings an elevated touch while being functional. A collaborative and open work area promotes creativity and fosters productivity."
       }
     }
-  },
-  {
+  },{
     "Project": "BRIGITTE BARDOT'S HOME",
+    "highlightText": "“La Vie En Rose. It is the French way of saying, <br />I am looking at the world through rose-colored glasses.” <br /> Audrey Hepburn in SABRINA (1954)",
     "Concept": {
       "title": "CONCEPT",
       "sections": [
@@ -112,25 +112,25 @@
           "name": "Project",
           "isPresent": true,
           "isFirst": true,
-          "useTemplate" : "project"
+          "useTemplate": "project"
         },
         {
           "name": "Floor Plan",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "floor-or-block-plans"
+          "useTemplate": "floor-or-block-plans"
         },
         {
           "name": "Isoemetric View",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "isometric"
+          "useTemplate": "isometric"
         },
         {
           "name": "Lighting",
           "isFirst": false,
           "isPresent": true,
-          "useTemplate" : "resource",
+          "useTemplate": "resource",
           "img": {
             "src": "../images/lighting_brigitte_bardots_home.png",
             "alt": "First Image Description"
@@ -140,7 +140,7 @@
           "name": "Perspective View",
           "isFirst": false,
           "isPresent": true,
-          "useTemplate" : "render-in-carousel",
+          "useTemplate": "render-in-carousel",
           "content": {
             "carousel": [
               {
@@ -174,7 +174,7 @@
         "Description": "French Country embodies charm, elegance, warmth, and comfort. There is a juxtaposition of rusticity yet refinement. Through carefully planned and selected lighting and fixtures, Mademoiselle Bardot's home in the south of France becomes a place of relaxation as well as gathering. Lighting supports overall needs and tasks while enhancing the ambiance of her villa."
       }
     }
-  },
+  },  
   {
     "Project": "CHEZ AUDREY",
     "Concept": {

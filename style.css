@@ -313,6 +313,10 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        .bordered-text {
+            border-bottom:  2px solid rgb(237, 180, 30)/* Adjust the thickness and color as needed */
+        }
+
         .column-details {
             font-size: 1.1em !important;
             color: #725A2C;
