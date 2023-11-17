@@ -117,40 +117,43 @@ jsonData.forEach((project) => {
  // console.log('Formatted sections:', sectionsFormatted);
 
 
-  function generateProjectHTML(project, id) {
-    // Use project-specific data to populate the HTML content for the 'Project' section
-    return `
-      <div class="tab-pane fade show active" id="${id}">
-        <section class="container section-details">
-          <h1 class="project-title">${project.Project}</h1>
-          <p class="column-details">
-                ${project.highlightText}
-          </p>
-          <div class="row justify-content-center">
-            <div class="col-md-4 custom-column">
-              <h3 class="title-border-project post-sub-title">Concept</h3>
-              <p class="column-details">
-                ${project.Concept.value.Description}
-              </p>
-            </div>
-            <div class="col-md-4 custom-column">
-              <h3 class="title-border-project post-sub-title">Objectives</h3>
-              <ul class="column-details">
-                <li><strong>Objective:</strong> ${project.Concept.value.Objective}</li>
-                <li><strong>Type:</strong> ${project.Concept.value.Type}</li>
-                <li><strong>Location:</strong> ${project.Concept.value.Location}</li>
-                <li><strong>Area:</strong> ${project.Concept.value.Area}</li>
-              </ul>
-            </div>
-            <div class="col-md-4 custom-column">
-              <h3 class="title-border-project post-sub-title">Client Branding</h3>
-              <img src="../images/client_branding_image.png" alt="Client Branding">
-            </div>
+ function generateProjectHTML(project, id) {
+  // Check if project.highlightText is defined and not null
+  let highlightTextHTML = project.highlightText ? 
+      `<p class="column-details">${project.highlightText}</p>` : 
+      '';
+
+  return `
+    <div class="tab-pane fade show active" id="${id}">
+      <section class="container section-details">
+        <h1 class="project-title">${project.Project}</h1>
+        ${highlightTextHTML} <!-- Include the highlight text only if it's defined -->
+        <div class="row justify-content-center">
+          <div class="col-md-4 custom-column">
+            <h3 class="title-border-project post-sub-title">Concept</h3>
+            <p class="column-details">
+              ${project.Concept.value.Description}
+            </p>
           </div>
-        </section>
-      </div>
-    `;
-  }
+          <div class="col-md-4 custom-column">
+            <h3 class="title-border-project post-sub-title">Objectives</h3>
+            <ul class="column-details">
+              <li><strong>Objective:</strong> ${project.Concept.value.Objective}</li>
+              <li><strong>Type:</strong> ${project.Concept.value.Type}</li>
+              <li><strong>Location:</strong> ${project.Concept.value.Location}</li>
+              <li><strong>Area:</strong> ${project.Concept.value.Area}</li>
+            </ul>
+          </div>
+          <div class="col-md-4 custom-column">
+            <h3 class="title-border-project post-sub-title">Client Branding</h3>
+            <img src="../images/client_branding_image.png" alt="Client Branding">
+          </div>
+        </div>
+      </section>
+    </div>
+  `;
+}
+
 // Define the function for generating default section HTML
 function generateDefaultSectionHTML(project, id, sectionName) {
   // Generate a default HTML content for an unknown section type
