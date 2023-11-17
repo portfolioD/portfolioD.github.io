@@ -1,6 +1,7 @@
 [
   {
     "Project": "ARITZIA HEADQUARTERS",
+    "highlightText": "The office accommodates 24 full-time employees and has a flexible collaboration working area to allow for visiting employees from offices in other cities. The open workspace can be converted into an event space for events held by Aritzia to showcase products and engage with clients and other design professionals. A mezzanine overlooks the open workspace, adjacent to windows that maximize daylighting in the workspace and promote well-being and productivity.",
     "Concept": {
       "title": "CONCEPT",
       "sections": [
@@ -76,8 +77,7 @@
                 "isActive": false
               }
             ]
-          },
-          "highlightText": "The office accommodates 24 full-time employees and has a flexible collaboration working area to allow for visiting employees from offices in other cities. The open workspace can be converted into an event space for events held by Aritzia to showcase products and engage with clients and other design professionals. A mezzanine overlooks the open workspace, adjacent to windows that maximize daylighting in the workspace and promote well-being and productivity."
+          }       
         } ,   
 
         {
