@@ -270,13 +270,8 @@
                 "isActive": true
               },
               {
-                "src": "../images/perspective_of_living_area.png",
-                "alt": "Second Image Description",
-                "isActive": false
-              },
-              {
                 "src": "../images/perspective_of_studio_therapy.png",
-                "alt": "Third Image Description",
+                "alt": "Second Image Description",
                 "isActive": false
               }
             ]
