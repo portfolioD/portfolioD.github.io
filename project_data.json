@@ -563,7 +563,26 @@
           "name": "DESIGN SKETCHES",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "resource" 
+          "useTemplate" : "render-in-carousel",
+          "content": {
+            "carousel": [
+              {
+                "src": "../images/design_sketch_living_room_ashford_residence.png",
+                "alt": "design_sketch_living_room",
+                "isActive": true
+              },
+              {
+                "src": "../images/design_sketch_master_bedroom_ashford_residence.png",
+                "alt": "design_sketch_master_bedroom",
+                "isActive": false
+              },
+              {
+                "src": "../images/design_sketch_studio.png",
+                "alt": "design_sketch_studio",
+                "isActive": false
+              }
+            ]
+          }
         }
       ],
       "hero": {
