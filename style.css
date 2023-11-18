@@ -631,4 +631,8 @@
             font-family: Arial, sans-serif  !important;
             color: #6c757d !important;
         }
+        .carousel-item {
+            transition-duration: 1s; /* Change the duration as needed */
+        }
+
        

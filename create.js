@@ -237,10 +237,16 @@ function generateCarouselHTML(carousel, sectionId , sectionName ) {
 
   // Generate carousel items
   const items = carousel.map((item, index) => `
-      <div class="carousel-item ${index === 0 ? 'active' : ''}">
+      <div class="carousel-item ${index === 0 ? 'active' : ''}"  data-interval="6000">
           <img src="${item.src}" class="d-block w-100" alt="${item.alt}">
       </div>
   `).join('');
+
+  const itemsIndicator =  carousel.map((item, index) => `
+ 
+      <li data-target="#carouselExample${sectionId}" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>
+ 
+`).join('');
 
   // Complete carousel HTML wrapped in the desired structure
   return `
@@ -248,6 +254,9 @@ function generateCarouselHTML(carousel, sectionId , sectionName ) {
           <section class="container section-details">
               <h1 id="section-title" class="post-title">${sectionName}</h1>
               <div id="carouselExample${sectionId}" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                     ${itemsIndicator}
+                  </ol>
                   <div class="carousel-inner">
                       ${items}
                   </div>
