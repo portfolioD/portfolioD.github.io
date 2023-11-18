@@ -263,12 +263,12 @@
           "content": {
             "carousel": [
               {
-                "src": "../images/sectional_elevation_north_traditional_living_room.png",
+                "src": "../images/sectional_elevation_north_chez_audrey.png",
                 "alt": "SECTIONAL ELEVATION - NORTH",
                 "isActive": true
               },
               {
-                "src": "../images/sectional_elevation _west_traditional_living_room.png",
+                "src": "../images/sectional_elevation_west_chez_audrey.png",
                 "alt": "SECTIONAL ELEVATION - WEST",
                 "isActive": false
               }
