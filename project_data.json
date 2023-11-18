@@ -486,7 +486,11 @@
           "name": "RENDERED FLOOR PLAN",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "floor-or-block-plans" 
+          "useTemplate" : "floor-or-block-plans",
+          "img": {
+            "src": "../images/hero_ashword_ar.jpg",
+            "alt": "BUBBLE DIAGRAMS"
+          }
         },
         {
           "name": "SCHEMATIC FLOOR PLAN",
