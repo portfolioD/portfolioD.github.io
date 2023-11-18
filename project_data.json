@@ -126,28 +126,7 @@
           "isFirst": true,
           "useTemplate": "project"
         },
-        {
-          "name": "Floor Plan",
-          "isPresent": true,
-          "isFirst": false,
-          "useTemplate": "floor-or-block-plans"
-        },
-        {
-          "name": "Isoemetric View",
-          "isPresent": true,
-          "isFirst": false,
-          "useTemplate": "isometric"
-        },
-        {
-          "name": "Lighting",
-          "isFirst": false,
-          "isPresent": true,
-          "useTemplate": "resource",
-          "img": {
-            "src": "../images/lighting_brigitte_bardots_home.png",
-            "alt": "First Image Description"
-          }
-        },
+    
         {
           "name": "Perspective View",
           "isFirst": false,
@@ -171,6 +150,27 @@
                 "isActive": false
               }
             ]
+          }
+        },
+        {
+          "name": "Lighting Floor Plan",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate": "resource",
+          "img": {
+            "src": "../images/lighting_floor_plan_brigitte_bardots_home.png",
+            "alt": "First Image Description"
+          }
+        },
+
+        {
+          "name": "Lighting",
+          "isFirst": false,
+          "isPresent": true,
+          "useTemplate": "resource",
+          "img": {
+            "src": "../images/lighting_brigitte_bardots_home.png",
+            "alt": "First Image Description"
           }
         }
       ],
@@ -452,25 +452,43 @@
           "useTemplate" : "project" 
         },
         {
+          "name": "CONCEPT BOARD",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource" 
+        },
+        {
           "name": "ADJACENCY MATRIX",
           "isPresent": true,
           "isFirst": false,
           "useTemplate" : "resource" 
         },
         {
-          "name": "BLOCK PLANS",
+          "name": "BUBBLE DIAGRAMS",
           "isPresent": true,
           "isFirst": false,
           "useTemplate" : "floor-or-block-plans" 
         },
         {
-          "name": "Material",
+          "name": "RENDERED FLOOR PLAN",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "resource" 
+          "useTemplate" : "floor-or-block-plans" 
         },
         {
-          "name": "Rendered View",
+          "name": "SCHEMATIC FLOOR PLAN",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "floor-or-block-plans" 
+        },
+        {
+          "name": "CIRCULATION DIAGRAM",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "floor-or-block-plans" 
+        },
+        {
+          "name": "PERSPECTIVE VIEW",
           "isPresent": true,
           "isFirst": false,
           "useTemplate" : "render-in-carousel",
@@ -493,6 +511,30 @@
               }
             ]
           }
+        },
+        {
+          "name": "SELECTED FF&E ",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource" 
+        },
+        {
+          "name": "SELECTED MATERIALS & FINISHES ",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource" 
+        }, 
+        {
+          "name": "ELEVATION",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource" 
+        },
+        {
+          "name": "DESIGN SKETCHES",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource" 
         }
       ],
       "hero": {
