@@ -87,7 +87,7 @@ jsonData.forEach((project) => {
         if(section.isPresent){
           if (section.img) {
             console.log("image",section.img.src)
-            sectionData.contentHTML = generateMaterialHTML(section , sectionData.id);
+            sectionData.contentHTML = generateMaterialHTML(section , sectionData.id ,section.name);
             console.log("image sources are",section.img.src)
           }else{
             console.error(`Error: Missing material content is missing for section in project: ${project.Project}`);
@@ -98,7 +98,7 @@ jsonData.forEach((project) => {
       case "render-in-carousel":
         if(section.isPresent){
           if (section.content && section.content.carousel) {
-            sectionData.contentHTML = generateCarouselHTML(section.content.carousel ,sectionData.id );
+            sectionData.contentHTML = generateCarouselHTML(section.content.carousel ,sectionData.id ,section.name );
           } else {
             console.error(`Error: Carousel content is missing for section in project: ${project.Project}`);
           }
@@ -193,14 +193,13 @@ function generateIsometricViewHTML(project, id) {
   `;
 }
 
-function generateMaterialHTML(section, id) {
+function generateMaterialHTML(section, id ,sectionName) {
   // Replace with the actual static content for the 'Material' section
   console.log("reciveved valued",section)
   return `
     <div class="tab-pane fade" id="${id}">
       <section  id="${id}" class="container section-details">
-        <h1 id="section-title" class="post-title">Material</h1>
-        <p>SELECTED MATERIALS & FINISHES</p>
+        <h1 id="section-title" class="post-title">${sectionName}</h1>
         <img src="${section.img.src}" alt="${section.img.alt}">
       </section>
     </div>
@@ -230,7 +229,7 @@ function generateFloorPlanHTML(project, id) {
   `;
 }
 
-function generateCarouselHTML(carousel, sectionId ,highlightText) {
+function generateCarouselHTML(carousel, sectionId , sectionName ) {
   if (!Array.isArray(carousel) || carousel.length === 0) {
       console.warn(`Carousel data is missing or incorrect`);
       return ''; // Return an empty string if carousel data is not available or empty
@@ -247,23 +246,21 @@ function generateCarouselHTML(carousel, sectionId ,highlightText) {
   return `
       <div class="tab-pane fade" id="${sectionId}">
           <section class="container section-details">
-              <h1 id="section-title" class="post-title">Rendered View</h1>
-              <p>OPEN WORK AREA RENDERING</p>
-              <div id="carouselExample" class="carousel slide" data-ride="carousel">
+              <h1 id="section-title" class="post-title">${sectionName}</h1>
+              <div id="carouselExample${sectionId}" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                       ${items}
                   </div>
-                  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <a class="carousel-control-prev" href="#carouselExample${sectionId}" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                   </a>
-                  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                  <a class="carousel-control-next" href="#carouselExample${sectionId}" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                   </a>
               </div>
           </section>
-          <p>${highlightText}</p>
       </div>
   `;
 }

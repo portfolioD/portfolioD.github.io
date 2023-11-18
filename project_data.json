@@ -21,15 +21,19 @@
           "name": "Isoemetric View",
           "isFirst": false,
           "isPresent": true,
-          "useTemplate" : "isometric"
+          "useTemplate" : "isometric",
+          "img": {
+            "src": "../images/isometric_artizia_headquarter.png",
+            "alt": "First Image Description"
+          }
         },
         {
           "name": "SECTIONAL PERSPECTIVE",
           "isFirst": false,
           "isPresent": true,
-          "useTemplate" : "floor-or-block-plans",
+          "useTemplate" : "resource",
           "img": {
-            "src": "../images/material_artizia_headquarter.png",
+            "src": "../images/sectional_perspective_artizia_headquarter.png",
             "alt": "First Image Description"
           }         
         },
@@ -43,17 +47,6 @@
             "alt": "First Image Description"
           }
         },
-        {
-          "name": "Furniture & Finish Plans",
-          "isFirst": false,
-          "isPresent": true,
-          "useTemplate" : "floor-or-block-plans",
-          "img": {
-            "src": "../images/material_artizia_headquarter.png",
-            "alt": "First Image Description"
-          }         
-        },
-
         {
           "name": "Rendered View",
           "isFirst": false,
@@ -88,6 +81,26 @@
             "src": "../images/furnishing_artizia_headquarter.png",
             "alt": "First Image Description"
           }
+        },
+        {
+          "name": "Furniture & Finish Plans",
+          "isFirst": false,
+          "isPresent": true,
+          "useTemplate": "render-in-carousel",
+          "content": {
+            "carousel": [
+              {
+                "src": "../images/furnished_plan_level_1_artizia_headquarter.png",
+                "alt": "First Image Description",
+                "isActive": true
+              },
+              {
+                "src": "../images/furnished_plan_level_2_artizia_headquarter.png",
+                "alt": "Second Image Description",
+                "isActive": false
+              }
+            ]
+          }         
         }
       ],
       "hero": {
@@ -187,25 +200,43 @@
           "useTemplate" : "project"
         },
         {
-          "name": "Floor Plan",
+          "name": "BUBBLE DIAGRAM",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource", 
+          "img": {
+            "src": "../images/bubble_diagram_matrix_chez_audrey.png",
+            "alt": "BUBBLE DIAGRAM"
+          }
+        },
+        {
+          "name": "ADJACENCY MATRIX",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource", 
+          "img": {
+            "src": "../images/adjacency_matrix_chez_audrey.png",
+            "alt": "ADJACENCY MATRIX"
+          }
+        },
+        {
+          "name": "BLOCK PLANS",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "resource", 
+          "img": {
+            "src": "../images/block_plans_chez_audrey.png",
+            "alt": "BLOCK PLANS"
+          }
+        },
+        {
+          "name": "Rendered Floor Plan",
           "isFirst": false,
           "isPresent": false,
           "useTemplate" : "floor-or-block-plans"
         },
         {
-          "name": "Isoemetric View",
-          "isFirst": false,
-          "isPresent": true,
-          "useTemplate" : "isometric"
-        },
-        {
-          "name": "Material",
-          "isFirst": false,
-          "isPresent": false,
-          "useTemplate" : "resource"
-        },
-        {
-          "name": "Rendered View",
+          "name": "Perspective View",
           "isFirst": false,
           "isPresent": true,
           "useTemplate" : "render-in-carousel",
@@ -224,6 +255,32 @@
             ]
           }
         }, 
+        {
+          "name": "SECTIONAL ELEVATION",
+          "isPresent": true,
+          "isFirst": false,
+          "useTemplate" : "render-in-carousel",
+          "content": {
+            "carousel": [
+              {
+                "src": "../images/sectional_elevation_north_traditional_living_room.png",
+                "alt": "SECTIONAL ELEVATION - NORTH",
+                "isActive": true
+              },
+              {
+                "src": "../images/sectional_elevation _west_traditional_living_room.png",
+                "alt": "SECTIONAL ELEVATION - WEST",
+                "isActive": false
+              }
+            ]
+          }
+        },
+        {
+          "name": "Material",
+          "isFirst": true,
+          "isPresent": false,
+          "useTemplate" : "resource"
+        },
         {
           "name": "SELECTED FF&E",
           "isPresent": true,
@@ -294,7 +351,7 @@
               },
               {
                 "src": "../images/perspective_of_studio_therapy.png",
-                "alt": "Second Image Description",
+                "alt": "perspective_of_studio_therapy",
                 "isActive": false
               }
             ]
@@ -335,43 +392,26 @@
           "useTemplate": "project"
         },
         {
-          "name": "ADJACENCY MATRIX",
-          "isPresent": true,
-          "isFirst": false,
-          "useTemplate" : "section-2-col" 
-        },
-        {
-          "name": "BLOCK PLANS",
-          "isPresent": true,
-          "isFirst": false,
-          "useTemplate"  : "section-2-col" 
-        },
-        {
           "name": "Material",
           "isPresent": true,
           "isFirst": false,
           "useTemplate" : "plain section tbd"
         },
         {
-          "name": "Rendered View",
+          "name": "PERSPECTIVE",
           "isPresent": true,
           "isFirst": false,
           "useTemplate" : "render-in-carousel",
           "content": {
             "carousel": [
               {
-                "src": "../images/rendered_lobby.png",
+                "src": "../images/ground_level_perspective_traditional_living_room.png",
                 "alt": "First Image Description",
                 "isActive": true
               },
               {
-                "src": "../images/rendered_office.png",
+                "src": "../images/mezzanine_perspective_traditional_living_room.png",
                 "alt": "Second Image Description",
-                "isActive": false
-              },
-              {
-                "src": "../images/rendered_kitchen.png",
-                "alt": "Third Image Description",
                 "isActive": false
               }
             ]
