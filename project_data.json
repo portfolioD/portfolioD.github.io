@@ -455,19 +455,32 @@
           "name": "CONCEPT BOARD",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "resource" 
+          "useTemplate" : "resource",
+          "img": {
+            "src": "../images/concept_board_ashford_residence.png",
+            "alt": "CONCEPT BOARD"
+          }
+
         },
         {
           "name": "ADJACENCY MATRIX",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "resource" 
+          "useTemplate" : "resource",
+          "img": {
+            "src": "../images/adjacency_matrix_ashword_residence.png",
+            "alt": "ADJACENCY MATRIX"
+          }
         },
         {
           "name": "BUBBLE DIAGRAMS",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "floor-or-block-plans" 
+          "useTemplate" : "resource",
+          "img": {
+            "src": "../images/bubble_diagram_matrix_ashford_residence.png",
+            "alt": "BUBBLE DIAGRAMS"
+          }
         },
         {
           "name": "RENDERED FLOOR PLAN",
@@ -479,13 +492,21 @@
           "name": "SCHEMATIC FLOOR PLAN",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "floor-or-block-plans" 
+          "useTemplate" : "resource",
+          "img": {
+            "src": "../images/schematic_diagram_ashford_residence.png",
+            "alt": "SCHEMATIC FLOOR PLAN"
+          }
         },
         {
           "name": "CIRCULATION DIAGRAM",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "floor-or-block-plans" 
+          "useTemplate" : "resource",
+          "img": {
+            "src": "../images/circulation_ashford_residence.png",
+            "alt": "SCHEMATIC FLOOR PLAN"
+          }
         },
         {
           "name": "PERSPECTIVE VIEW",
@@ -513,16 +534,24 @@
           }
         },
         {
-          "name": "SELECTED FF&E ",
+          "name": "SELECTED FF&E",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "resource" 
+          "useTemplate" : "resource", 
+          "img": {
+            "src": "../images/selected_ffe_ashford_residence.png",
+            "alt": "SELECTED FF&E"
+          }
         },
         {
-          "name": "SELECTED MATERIALS & FINISHES ",
+          "name": "SELECTED MATERIALS & FINISHES",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "resource" 
+          "useTemplate" : "resource" ,
+          "img": {
+            "src": "../images/selected_material_finishes_ashford_residence.png",
+            "alt": "SELECTED MATERIALS & FINISHES"
+          }
         }, 
         {
           "name": "ELEVATION",
