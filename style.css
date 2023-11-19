@@ -285,12 +285,6 @@
             text-align: center;
             width: 100%;
         }
-        #navbarTogglerDemo01{
-            flex-basis: fit-content;
-            flex-grow: 0;
-            /*background:rgb(211, 173, 76) ;*/
-
-        }
 
         .secondary{
             background-color: #fff;
@@ -634,5 +628,38 @@
         .carousel-item {
             transition-duration: 1s; /* Change the duration as needed */
         }
+/* Style for making nav-pills slideable on mobile devices */
 
-       
+@media (max-width: 768px) {
+    .project-tab-col {
+       padding-top: 0px !important; 
+    }
+
+ 
+
+    .nav-pills.flex-column {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-grow: 1; /* Prevents the container from shrinking */
+        overflow-x: scroll; /* Changed to 'scroll' to always show scrollbar */
+        -webkit-overflow-scrolling: touch; /* for smooth scrolling on touch devices */
+    }
+
+    .nav-pills.flex-column .nav-item {
+        display: inline-block; /* Display nav-items inline */
+        flex: none; /* Prevent flex items from growing or shrinking */
+        min-width: 80px; /* Example minimum width, adjust as needed */
+        padding: 5px; /* Example padding, adjust as needed */
+      }
+      
+      #navbarTogglerDemo01 {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: scroll;
+    }
+    
+    #navbarTogglerDemo01::-webkit-scrollbar {
+        display: none;
+    }
+
+  }
