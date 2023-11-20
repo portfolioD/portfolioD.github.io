@@ -13,107 +13,124 @@
 </head>
 
 <body id="hand-sketches">
-    <!-- Sticky Top Navbar -->
-    <div class="sticky-top">
-        <div class="container portfolio-navbar hero">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div id="hero_im">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="Desktop Image" class="img-fluid">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section4">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section5">Thesis</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="content-wrapper">
+        <!-- Sticky Top Navbar -->
+        <div class="sticky-top">
+            <div class="container portfolio-navbar hero">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div id="hero_im">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" alt="Desktop Image" class="img-fluid sketch">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section4">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section5">Thesis</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </div>
-    <div class="container mt-4 hand-sketches">
-        <h1 class="text-center mb-4 project-title">My Hand Sketches</h1>
+        <div class="container mt-4 hand-sketches">
+            <h1 class="text-center mb-4 project-title">My Hand Sketches</h1>
 
-        <!-- Tabbed Menu -->
-        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="furniture-tab" data-toggle="tab" href="#furniture" role="tab" aria-controls="furniture" aria-selected="true">Furniture</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="wooden-frame-tab" data-toggle="tab" href="#wooden-frame" role="tab" aria-controls="wooden-frame" aria-selected="false">Wooden Frame</a>
-            </li>
-        </ul>
+            <!-- Tabbed Menu -->
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="furniture-tab" data-toggle="tab" href="#furniture" role="tab" aria-controls="furniture" aria-selected="true">Furniture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="wooden-frame-tab" data-toggle="tab" href="#wooden-frame" role="tab" aria-controls="wooden-frame" aria-selected="false">Details</a>
+                </li>
+            </ul>
 
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="furniture" role="tabpanel" aria-labelledby="furniture-tab">
-                <!-- Furniture Content Here -->
-                <div class="row">         
-                  <!-- Gallery -->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="furniture" role="tabpanel" aria-labelledby="furniture-tab">
+                    <!-- Furniture Content Here -->
+                    <div class="row">         
+                    <!-- Gallery -->
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <img src="images/handsketches_chair_of_renisereb.png" class="img-fluid sketch" alt="Sketch 1">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="images/handsketches_mechanical_table.png" class="img-fluid sketch" alt="Sketch 2">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="images/handsketches_side_chair.png" class="img-fluid sketch" alt="Sketch 3">
+                            </div>
+                            <!-- Add more images in similar columns -->
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="wooden-frame" role="tabpanel" aria-labelledby="wooden-frame-tab">
+                    <!-- Wooden Frame Content Here -->
                     <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <img src="images/handsketches_chair_of_renisereb.png" class="img-fluid" alt="Sketch 1">
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <img src="images/handsketches_mechanical_table.png" class="img-fluid" alt="Sketch 2">
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <img src="images/handsketches_side_chair.png" class="img-fluid" alt="Sketch 3">
-                        </div>
+                    <!-- Loop through images 1 to 8 -->
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_1.png" class="img-fluid sketch" alt="Sketch 1">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_2.png" class="img-fluid sketch" alt="Sketch 2">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_3.png" class="img-fluid sketch" alt="Sketch 3">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_4.png" class="img-fluid sketch" alt="Sketch 4">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_5.png" class="img-fluid sketch" alt="Sketch 5">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_6.png" class="img-fluid sketch" alt="Sketch 6">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_7.png" class="img-fluid sketch" alt="Sketch 7">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="images/handsketches_frame_8.png" class="img-fluid sketch" alt="Sketch 8">
+                    </div>
                         <!-- Add more images in similar columns -->
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="wooden-frame" role="tabpanel" aria-labelledby="wooden-frame-tab">
-                <!-- Wooden Frame Content Here -->
-                <div class="row">
-                <!-- Loop through images 1 to 8 -->
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_1.png" class="img-fluid" alt="Sketch 1">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_2.png" class="img-fluid" alt="Sketch 2">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_3.png" class="img-fluid" alt="Sketch 3">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_4.png" class="img-fluid" alt="Sketch 4">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_5.png" class="img-fluid" alt="Sketch 5">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_6.png" class="img-fluid" alt="Sketch 6">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_7.png" class="img-fluid" alt="Sketch 7">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="images/handsketches_frame_8.png" class="img-fluid" alt="Sketch 8">
-                </div>
-                    <!-- Add more images in similar columns -->
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" src="" class="img-fluid sketch" alt="Enlarged Sketch">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
- </div>
     <!-- Footer -->
     <footer class="text-muted">
         <div class="container">
@@ -125,6 +142,16 @@
       </footer>
 
     </body>
+    <script>
+        // JavaScript to handle clicking on images
+        document.querySelectorAll('.sketch').forEach(item => {
+        item.addEventListener('click', event => {
+        const src = item.getAttribute('src');
+        document.getElementById('modalImage').src = src;
+        $('#imageModal').modal('show');
+        });
+        });
+    </script>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
