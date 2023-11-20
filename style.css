@@ -69,7 +69,7 @@
  
         }
    
-        #project-details-section a.nav-link{
+        #project-details-section a.nav-link ,#hand-sketches  a.nav-link{
             color: #635A2C!important;
             text-decoration: none;
             background-color: transparent;
@@ -190,7 +190,7 @@
             font-family: 'Montserrat';
            
         }
-        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link ,.nav-item>.nav-link.active {
             background-color:   rgb(237, 180, 30) !important; 
         }
 
@@ -651,7 +651,7 @@
         min-width: 80px; /* Example minimum width, adjust as needed */
         padding: 5px; /* Example padding, adjust as needed */
       }
-      
+
       #navbarTogglerDemo01 {
         -ms-overflow-style: none;
         scrollbar-width: none;
