@@ -14,7 +14,7 @@
         .content-wrapper {
             flex: 1; /* Allows content to expand and push the footer down */
         }
-        
+
         @media (max-width: 768px) {  
             .project-details {
                 position: absolute;
@@ -674,4 +674,10 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow effect */
     }
     
+    @media (min-width: 768px) {
+        #imageModal .modal-content img {
+            width: 100%; /* Scale the image to cover the modal width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
     
