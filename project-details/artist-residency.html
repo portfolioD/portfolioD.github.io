@@ -48,43 +48,44 @@
     </div>
 </div>
 <body id="project_details">
-  <div id="project-details-section" class="container container-fluid p-0">
-    <h1 class="project-title d-lg-none text-center pt-5">ARTIST RESIDENCY</h1>
-    <div class="row container-fluid">
-    <!-- Tab Navigation -->
-      <div class="col-lg-3 project-tab-col">
-        <div class="row ">
-                    <!-- navigation.html -->
-                    <div class="container portfolio-navbar hero">
-                        <div id="navbarTogglerDemo01">
-                            <ul class="nav nav-pills  flex-column nav-pills section-details-tab">
-                                        <li class="nav-item">
-                                        <a class="nav-link active no-change-color" data-toggle="tab" href="#section1">Project</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link  no-change-color" data-toggle="tab" href="#section2">Floor Plan</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link  no-change-color" data-toggle="tab" href="#section3">Isoemetric View</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link  no-change-color" data-toggle="tab" href="#section4">Material</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link  no-change-color" data-toggle="tab" href="#section5">PERSPECTIVE VIEW</a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link  no-change-color" data-toggle="tab" href="#section6">SELECTED FF&amp;E</a>
-                                        </li>
-                            </ul>
+  <div class="content-wrapper">
+      <div id="project-details-section" class="container container-fluid p-0">
+        <h1 class="project-title d-lg-none text-center pt-5">ARTIST RESIDENCY</h1>
+        <div class="row container-fluid">
+        <!-- Tab Navigation -->
+          <div class="col-lg-3 project-tab-col">
+            <div class="row ">
+                        <!-- navigation.html -->
+                        <div class="container portfolio-navbar hero">
+                            <div id="navbarTogglerDemo01">
+                                <ul class="nav nav-pills  flex-column nav-pills section-details-tab">
+                                            <li class="nav-item">
+                                            <a class="nav-link active no-change-color" data-toggle="tab" href="#section1">Project</a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link  no-change-color" data-toggle="tab" href="#section2">Floor Plan</a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link  no-change-color" data-toggle="tab" href="#section3">Isoemetric View</a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link  no-change-color" data-toggle="tab" href="#section4">Material</a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link  no-change-color" data-toggle="tab" href="#section5">PERSPECTIVE VIEW</a>
+                                            </li>
+                                            <li class="nav-item">
+                                            <a class="nav-link  no-change-color" data-toggle="tab" href="#section6">SELECTED FF&amp;E</a>
+                                            </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-            </div>
-      </div>
-      <div class="col-lg-9">
-          <div class="tab-content section-details-tab">
-            <!-- section.html -->
-                
+                </div>
+          </div>
+          <div class="col-lg-9">
+              <div class="tab-content section-details-tab">
+                <!-- section.html -->
+                    
     <div class="tab-pane fade show active" id="section1">
       <section class="container section-details">
         <h1 class="project-title d-none d-lg-block ">ARTIST RESIDENCY</h1>
@@ -113,12 +114,12 @@
       </section>
     </div>
   
-                
+                    
     <div class="tab-pane fade" id="section2">
       <section class="container section-details">
         <h1 id="project-title" class="post-title">Floor Plan</h1>
         <p>This is the content of the Floor Plan section for ARTIST RESIDENCY.</p>
-        <img src="../images/floorplan_artizia.png" alt="Floor Plan">
+        <img src="../images/floorplan_artizia.png" class = "floorplan" alt="Floor Plan">
         <div class="col-md-2">
           <p>This is a small column.</p>
         </div>
@@ -131,7 +132,7 @@
       </section>
     </div>
   
-                
+                    
     <div class="tab-pane fade" id="section3">
       <section class="container section-details">
         <h1 id="section-title" class="post-title">Isometric View</h1>
@@ -149,7 +150,7 @@
       </section>
     </div>
   
-                
+                    
     <div class="tab-pane fade" id="section4">
       <section  id="section4" class="container section-details">
         <h1 id="section-title" class="post-title">Material</h1>
@@ -158,7 +159,7 @@
     </div>
     
   
-                
+                    
       <div class="tab-pane fade" id="section5">
           <section class="container section-details">
               <h1 id="section-title" class="post-title ">PERSPECTIVE VIEW</h1>
@@ -197,7 +198,7 @@
           </section>
       </div>
   
-                
+                    
     <div class="tab-pane fade" id="section6">
       <section  id="section6" class="container section-details">
         <h1 id="section-title" class="post-title">SELECTED FF&E</h1>
@@ -206,10 +207,11 @@
     </div>
     
   
+              </div>
           </div>
-      </div>
+        </div>
+     </div>
     </div>
-</div>
         <!-- Footer -->
         <footer class="footer container">
             <div class="container">
@@ -224,7 +226,16 @@
             </div>
         </footer>
         </body>
-
+<script>
+// JavaScript to handle clicking on images
+document.querySelectorAll('.floorplan').forEach(item => {
+item.addEventListener('click', event => {
+const src = item.getAttribute('src');
+document.getElementById('modalImage').src = src;
+$('#imageModal').modal('show');
+});
+});
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
