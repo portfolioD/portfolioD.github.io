@@ -706,3 +706,10 @@
         justify-content: space-between;
 
     }
+
+    @media (min-width: 768px) {
+        .dp-images .figure-caption {
+            font-size: 118%;
+        }
+    }
+   
