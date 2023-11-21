@@ -161,29 +161,30 @@
         <h1 id="section-title" class="post-title">SELECTED FF&E</h1>
         <img src="../images/furnishing_tradition_living_room.png" alt="Selected FF&E">
       </section>
-    </div>
-    
+    </div>   
   
               </div>
           </div>
         </div>
      </div>
     </div>
+  
     <!-- Modal -->
     <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img id="modalImage" src="" class="img-fluid" alt="Enlarged Sketch">
-                </div>
-            </div>
-        </div>
+      <div class="modal-dialog modal-cl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <img id="modalImage" src="" class="img-fluid sketch" alt="Enlarged Sketch">
+          </div>
+         </div>
+       </div>
+      </div>
     </div>
         <!-- Footer -->
         <footer class="footer container">
@@ -204,7 +205,10 @@
   document.querySelectorAll('.floorplan').forEach(item => {
   item.addEventListener('click', event => {
   const src = item.getAttribute('src');
+  const alt = item.getAttribute('alt');
   document.getElementById('modalImage').src = src;
+  document.getElementById('imageModalLabel').textContent  = alt
+  
   $('#imageModal').modal('show');
   });
   });

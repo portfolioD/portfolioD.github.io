@@ -343,6 +343,14 @@
             width: 71%;
         }
 
+        .figure img {
+            width: 100%;
+        }
+
+        .floorplan img {
+            width: 50%;
+        }
+
         h2#section-title {
             font-size: x-large;
         }
@@ -681,3 +689,20 @@
         }
     }
     
+    .modal-cl{
+        max-width:90vw;
+    }
+
+    .dp-images{
+        max-width: 40%;
+    }
+    .floor-plan{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .floor-plan::last{
+        justify-content: space-between;
+
+    }
