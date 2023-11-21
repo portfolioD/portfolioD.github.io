@@ -690,7 +690,7 @@
     }
     
     .modal-cl{
-        max-width:90vw;
+        max-width:80vw !important;
     }
 
     .dp-images{
