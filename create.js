@@ -23,37 +23,6 @@ if (!fs.existsSync(outputFolder)) {
   fs.mkdirSync(outputFolder);
 }
 
-// Define the main template
-let mainTemplate = `
-<!DOCTYPE html>
-<html lang="en">
-{{> header}}
-<body id="project_details">
-  <div id="project-details-section" class="container container-fluid p-0">
-    <div class="row container-fluid py-3">
-    <!-- Tab Navigation -->
-      <div class="col-lg-3 project-tab-col">
-        <div class="row container-fluid py-3">
-                <div id="navbarTogglerDemo01">
-                    {{> navigation}}
-                </div>
-            </div>
-      </div>
-      <div class="col-lg-9">
-          <div class="tab-content section-details-tab py-3">
-            {{> section}}
-          </div>
-      </div>
-    </div>
-</div>
-    {{> footer}}
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-</html>
-`;
 
 // Loop through each project in the JSON data
 jsonData.forEach((project) => {
@@ -65,7 +34,7 @@ jsonData.forEach((project) => {
       // Initialize the HTML content as an empty string
       contentHTML: ''
     };
-   // console.log("section" ,section)
+    console.log("section" ,section)
     // Use a switch statement to handle different section types
     switch (section.useTemplate) {
       case "project":
@@ -73,9 +42,13 @@ jsonData.forEach((project) => {
           sectionData.contentHTML = generateProjectHTML(project, sectionData.id);
         }
         break;
-      case "floor-or-block-plans":
+      case "multiple-doc":
         if(section.isPresent){
-          sectionData.contentHTML = generateFloorPlanHTML(project, sectionData.id);
+          if (section.fileNames) {
+          sectionData.contentHTML = generateFloorPlanHTML(project, sectionData.id ,section.fileNames);
+          }else{
+            console.error(`Error: file content is missing for section in project: ${project.Project}`);
+          }
         } 
         break;
       case "isometric":
@@ -126,7 +99,7 @@ jsonData.forEach((project) => {
   return `
     <div class="tab-pane fade show active" id="${id}">
       <section class="container section-details">
-        <h1 class="project-title">${project.Project}</h1>
+        <h1 class="project-title d-none d-lg-block ">${project.Project}</h1>
         ${highlightTextHTML} <!-- Include the highlight text only if it's defined -->
         <div class="row justify-content-center">
           <div class="col-md-4 custom-column">
@@ -145,8 +118,8 @@ jsonData.forEach((project) => {
             </ul>
           </div>
           <div class="col-md-4 custom-column">
-            <h3 class="title-border-project post-sub-title">Client Branding</h3>
-            <img src="../images/client_branding_image.png" alt="Client Branding">
+            <h3 class="title-border-project post-sub-title"> ${project.Concept.branding.title}</h3>
+            <img src="${project.Concept.branding.img.src}" alt=" ${project.Concept.branding.title}">
           </div>
         </div>
       </section>
@@ -202,31 +175,30 @@ function generateMaterialHTML(section, id ,sectionName) {
         <h1 id="section-title" class="post-title">${sectionName}</h1>
         <img src="${section.img.src}" alt="${section.img.alt}">
       </section>
-    </div>
-    
+    </div>   
   `;
 }
 
-function generateFloorPlanHTML(project, id) {
+function generateFloorPlanHTML(project, id , filenames) {
+  console.log("fname" ,filenames)
+    // Generate carousel items
+    const floorplan_items = filenames.map((item, index) => `
+    <!-- Teaser Images -->
+    <div  class = "dp-images">
+    <figure class="figure">
+    <img src="${item.img.src}" class=" floorplan figure-img img-fluid rounded border" alt="${item.img.alt}">
+      <figcaption class="figure-caption text-center">${item.img.alt}.</figcaption>
+    </figure>
+   </div> 
+`).join('');
   // Replace with the actual static content for the 'Floor Plan' section
   return `
-    <div class="tab-pane fade" id="${id}">
-      <section class="container section-details">
-        <h1 id="project-title" class="post-title">Floor Plan</h1>
-        <p>This is the content of the Floor Plan section for ${project.Project}.</p>
-        <img src="../images/floorplan_artizia.png" alt="Floor Plan">
-        <div class="col-md-2">
-          <p>This is a small column.</p>
-        </div>
-        <div class="col-md-5">
-          <p>This is the first equal-width column.</p>
-        </div>
-        <div class="col-md-5">
-          <p>This is the second equal-width column.</p>
-        </div>
-      </section>
-    </div>
-  `;
+  <div class="tab-pane fade" id="${id}">
+    <section  id="${id}" class="container section-details floor-plan">
+      ${floorplan_items} 
+    </section>
+  </div>   
+`;
 }
 
 function generateCarouselHTML(carousel, sectionId , sectionName ) {
@@ -252,7 +224,7 @@ function generateCarouselHTML(carousel, sectionId , sectionName ) {
   return `
       <div class="tab-pane fade" id="${sectionId}">
           <section class="container section-details">
-              <h1 id="section-title" class="post-title">${sectionName}</h1>
+              <h1 id="section-title" class="post-title ">${sectionName}</h1>
               <div id="carouselExample${sectionId}" class="carousel slide" data-ride="carousel">
                  <ol class="carousel-indicators">
                      ${itemsIndicator}
@@ -275,9 +247,6 @@ function generateCarouselHTML(carousel, sectionId , sectionName ) {
 }
 
 
-
-
-
   
   // Define the placeholders for the current project
   const placeholders = {
@@ -290,6 +259,70 @@ function generateCarouselHTML(carousel, sectionId , sectionName ) {
     hero_alt: project.Concept.hero.alt,
     sections: sectionsFormatted,
   };
+
+  // Define the main template
+let mainTemplate = `
+<!DOCTYPE html>
+<html lang="en">
+{{> header}}
+<body id="project_details">
+  <div class="content-wrapper">
+      <div id="project-details-section" class="container container-fluid p-0">
+        <h1 class="project-title d-lg-none text-center pt-5">${placeholders.title}</h1>
+        <div class="row container-fluid">
+        <!-- Tab Navigation -->
+          <div class="col-lg-3 project-tab-col">
+            <div class="row ">
+                        {{> navigation}}
+                </div>
+          </div>
+          <div class="col-lg-9">
+              <div class="tab-content section-details-tab">
+                {{> section}}
+              </div>
+          </div>
+        </div>
+     </div>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-cl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <img id="modalImage" src="" class="img-fluid sketch" alt="Enlarged Sketch">
+          </div>
+         </div>
+       </div>
+      </div>
+    </div>
+    {{> footer}}
+</body>
+  <script>
+  // JavaScript to handle clicking on images
+  document.querySelectorAll('.floorplan').forEach(item => {
+  item.addEventListener('click', event => {
+  const src = item.getAttribute('src');
+  const alt = item.getAttribute('alt');
+  document.getElementById('modalImage').src = src;
+  document.getElementById('imageModalLabel').textContent  = alt
+  
+  $('#imageModal').modal('show');
+  });
+  });
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+</html>
+`;
 
   try {
     // Render the main template
