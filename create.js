@@ -194,8 +194,11 @@ function generateFloorPlanHTML(project, id , filenames) {
   // Replace with the actual static content for the 'Floor Plan' section
   return `
   <div class="tab-pane fade" id="${id}">
-    <section  id="${id}" class="container section-details floor-plan">
+    <section  id="${id}" class="container section-details">
+    <h1 id="section-title" class="post-title">Floor Plan</h1>
+    <div class = " floor-plan">
       ${floorplan_items} 
+    </div>
     </section>
   </div>   
 `;
