@@ -653,7 +653,6 @@
         display: flex;
         flex-flow: row nowrap;
         flex-grow: 1; /* Prevents the container from shrinking */
-        overflow-x: scroll; /* Changed to 'scroll' to always show scrollbar */
         -webkit-overflow-scrolling: touch; /* for smooth scrolling on touch devices */
     }
 
