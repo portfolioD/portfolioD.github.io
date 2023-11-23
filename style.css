@@ -647,7 +647,9 @@
        padding-top: 0px !important; 
     }
 
- 
+    #hand-sketches li.nav-item {
+        margin-right: 1em;
+    }
 
     .nav-pills.flex-column {
         display: flex;
