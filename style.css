@@ -741,3 +741,11 @@
         padding-top: 4px; /* Provide some space between the image and the caption */
         color: #635A2C !important; /* Optional: Change text color */
       }
+
+      @media (max-width: 576px) { /* Adjust for mobile screens */
+        #imageModal .modal-dialog {
+          max-width: 90% !important; /* Makes the modal wider on small screens, adjust as needed */
+        }
+      }
+      
+ 
