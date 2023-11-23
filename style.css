@@ -239,6 +239,10 @@
         #landing_page .section-details img {
              width: 100%; 
         }
+
+        .one .floor-plan .dp-images{
+            max-width: 100%  !important; 
+        }
         @media (max-width: 767px) {     
             #landing_page .section-details img {
             margin-top: 0px !important;
