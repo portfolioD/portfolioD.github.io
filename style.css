@@ -688,6 +688,10 @@
             width: 100%; /* Scale the image to cover the modal width */
             height: auto; /* Maintain aspect ratio */
         }
+
+        .section-details.material img{
+            width:100%;
+        }
     }
     
     .modal-cl{

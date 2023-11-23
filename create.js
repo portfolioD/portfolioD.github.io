@@ -171,7 +171,7 @@ function generateMaterialHTML(section, id ,sectionName) {
   console.log("reciveved valued",section)
   return `
     <div class="tab-pane fade" id="${id}">
-      <section  id="${id}" class="container section-details">
+      <section  id="${id}" class="container section-details material">
         <h1 id="section-title" class="post-title">${sectionName}</h1>
         <img src="${section.img.src}" alt="${section.img.alt}">
       </section>
