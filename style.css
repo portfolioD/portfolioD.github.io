@@ -716,7 +716,7 @@
         .dp-images .figure-caption {
             font-size: 118%;
         }
-        .carousel-item{
+        #project_details .carousel-item{
             height: 500px; /* Set a fixed height for the image wrapper */
             width: 100%; /* Full width to cover the carousel item */
             overflow: hidden; /* Hide the overflow to maintain the fixed height */
