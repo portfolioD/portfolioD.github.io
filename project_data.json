@@ -12,39 +12,15 @@
           "useTemplate" : "project"
         },
         {
-          "name": "floorplans",
+          "name": "Floor plan",
           "isFirst": false,
           "isPresent": true,
           "useTemplate" : "multiple-doc",
           "fileNames": [
             {
               "img": {
-                "src": "../images/fp-level-1--construction-plan.png",
-                "alt": "Construction Plan"
-              }
-            },
-            {
-              "img": {
-                "src": "../images/fp-level-1--data-&-communication-plan.png",
-                "alt": "Data & Communication Plan"
-              }
-            },
-            {
-              "img": {
                 "src": "../images/fp-level-1--demo-plan.png",
                 "alt": "Demo Plan"
-              }
-            },
-            {
-              "img": {
-                "src": "../images/fp-level-1--finish-plan.png",
-                "alt": "Finish Plan"
-              }
-            },
-            {
-              "img": {
-                "src": "../images/fp-level-1--furniture-plan.png",
-                "alt": "Furniture Plan"
               }
             },
             {
@@ -55,8 +31,33 @@
             },
             {
               "img": {
+                "src": "../images/fp-level-1--construction-plan.png",
+                "alt": "Construction Plan"
+              }
+            },
+            {
+              "img": {
                 "src": "../images/fp-level-1--reflected-ceiling-plan.png",
                 "alt": "Reflected Ceiling Plan"
+              }
+            },
+            {
+              "img": {
+                "src": "../images/fp-level-1--data-&-communication-plan.png",
+                "alt": "Data & Communication Plan"
+              }
+            },
+    
+            {
+              "img": {
+                "src": "../images/fp-level-1--finish-plan.png",
+                "alt": "Finish Plan"
+              }
+            },
+            {
+              "img": {
+                "src": "../images/fp-level-1--furniture-plan.png",
+                "alt": "Furniture Plan"
               }
             }
           ]
@@ -100,17 +101,17 @@
             "carousel": [
               {
                 "src": "../images/rendered_lobby.png",
-                "alt": "First Image Description",
+                "alt": "COLLABORATION AREA RENDERING ",
                 "isActive": true
               },
               {
                 "src": "../images/rendered_office.png",
-                "alt": "Second Image Description",
+                "alt": "OPEN WORK AREA RENDERING",
                 "isActive": false
               },
               {
                 "src": "../images/rendered_kitchen.png",
-                "alt": "Third Image Description",
+                "alt": "KITCHEN/PANTRY RENDERING",
                 "isActive": false
               }
             ]
@@ -135,12 +136,12 @@
             "carousel": [
               {
                 "src": "../images/furnished_plan_level_1_artizia_headquarter.png",
-                "alt": "First Image Description",
+                "alt": "FURNITURE/FINISH PLANS - LEVEL 1",
                 "isActive": true
               },
               {
                 "src": "../images/furnished_plan_level_2_artizia_headquarter.png",
-                "alt": "Second Image Description",
+                "alt": "FURNITURE/FINISH PLANS - LEVEL 2",
                 "isActive": false
               }
             ]
@@ -162,7 +163,7 @@
         "title" : "Client Branding",
         "img":{
           "src": "../images/branding_artizia_headquarter.png",
-          "alt": "First Image Description"
+          "alt": "Client Branding"
         }
       }
     }
@@ -186,18 +187,18 @@
           "content": {
             "carousel": [
               {
-                "src": "../images/perspective_view_living_area.png",
-                "alt": "First Image Description",
+                "src": "../images/perspective_view_living_area.jpg",
+                "alt": "Living Room",
                 "isActive": true
               },
               {
-                "src": "../images/perspective_view_dining_area.png",
-                "alt": "Second Image Description",
+                "src": "../images/perspective_view_dining_area.jpg",
+                "alt": "Dining Room",
                 "isActive": false
               },
               {
-                "src": "../images/perspective_view_kitchen_area.png",
-                "alt": "Third Image Description",
+                "src": "../images/perspective_view_kitchen_area.jpg",
+                "alt": "Kitchen",
                 "isActive": false
               }
             ]
@@ -207,11 +208,15 @@
           "name": "Lighting Floor Plan",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate": "resource",
-          "img": {
-            "src": "../images/lighting_floor_plan_brigitte_bardots_home.png",
-            "alt": "First Image Description"
-          }
+          "useTemplate" : "multiple-doc",
+          "fileNames": [
+            {
+              "img": {
+                "src": "../images/lighting_floor_plan_brigitte_bardots_home.jpg",
+                "alt": "Lighting Floor Plan"
+              }
+            }
+          ]
         },
 
         {
@@ -302,12 +307,12 @@
             "carousel": [
               {
                 "src": "../images/rendered_chez_ground_level_perspective.png",
-                "alt": "First Image Description",
+                "alt": "Ground level perspective",
                 "isActive": true
               },
               {
                 "src": "../images/rendered_chez_mezzanine_level_perspective.png",
-                "alt": "Second Image Description",
+                "alt": "Mezzanine level perspective",
                 "isActive": false
               }
             ]
@@ -411,12 +416,12 @@
             "carousel": [
               {
                 "src": "../images/perspective_of_foyer.png",
-                "alt": "First Image Description",
+                "alt": "Perspective of foyer",
                 "isActive": true
               },
               {
                 "src": "../images/perspective_of_studio_therapy.png",
-                "alt": "perspective_of_studio_therapy",
+                "alt": "Perspective of studio therapy",
                 "isActive": false
               }
             ]
@@ -478,12 +483,12 @@
             "carousel": [
               {
                 "src": "../images/ground_level_perspective_traditional_living_room.png",
-                "alt": "First Image Description",
+                "alt": "Ground level perspective traditional living room",
                 "isActive": true
               },
               {
                 "src": "../images/mezzanine_perspective_traditional_living_room.png",
-                "alt": "Second Image Description",
+                "alt": "Mezzanine perspective traditional living room",
                 "isActive": false
               }
             ]
@@ -514,7 +519,7 @@
         "title" : "Design Inspiration",
         "img":{
           "src": "../images/branding_tradition_living_room.png",
-          "alt": "First Image Description"
+          "alt": "Design Inspiration"
         }
       }
     }
@@ -599,17 +604,17 @@
             "carousel": [
               {
                 "src": "../images/rendered_lobby.png",
-                "alt": "First Image Description",
+                "alt": "Rendered Lobby",
                 "isActive": true
               },
               {
                 "src": "../images/rendered_office.png",
-                "alt": "Second Image Description",
+                "alt": "Rendered Office",
                 "isActive": false
               },
               {
                 "src": "../images/rendered_kitchen.png",
-                "alt": "Third Image Description",
+                "alt": "Rendered Kitchen",
                 "isActive": false
               }
             ]
@@ -650,17 +655,17 @@
             "carousel": [
               {
                 "src": "../images/design_sketch_living_room_ashford_residence.png",
-                "alt": "design_sketch_living_room",
+                "alt": "Design Sketch Living Room",
                 "isActive": true
               },
               {
                 "src": "../images/design_sketch_master_bedroom_ashford_residence.png",
-                "alt": "design_sketch_master_bedroom",
+                "alt": "Design Sketch master bedroom",
                 "isActive": false
               },
               {
                 "src": "../images/design_sketch_studio_ashford_residence.png",
-                "alt": "design_sketch_studio",
+                "alt": "Design Sketch studio",
                 "isActive": false
               }
             ]

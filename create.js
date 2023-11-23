@@ -45,7 +45,7 @@ jsonData.forEach((project) => {
       case "multiple-doc":
         if(section.isPresent){
           if (section.fileNames) {
-          sectionData.contentHTML = generateFloorPlanHTML(project, sectionData.id ,section.fileNames);
+          sectionData.contentHTML = generateFloorPlanHTML(project, sectionData.id ,section.fileNames ,section.name);
           }else{
             console.error(`Error: file content is missing for section in project: ${project.Project}`);
           }
@@ -179,14 +179,16 @@ function generateMaterialHTML(section, id ,sectionName) {
   `;
 }
 
-function generateFloorPlanHTML(project, id , filenames) {
+function generateFloorPlanHTML(project, id , filenames ,sectionName) {
   console.log("fname" ,filenames)
-    // Generate carousel items
+    // Check if project.highlightText is defined and not null
+
+    // Generate carousel items make logic for one item
     const floorplan_items = filenames.map((item, index) => `
     <!-- Teaser Images -->
     <div  class = "dp-images">
     <figure class="figure">
-    <img src="${item.img.src}" class=" floorplan figure-img img-fluid rounded border" alt="${item.img.alt}">
+    <img src="${item.img.src}" class="floorplan figure-img img-fluid rounded border" alt="${item.img.alt}">
       <figcaption class="figure-caption text-center">${item.img.alt}.</figcaption>
     </figure>
    </div> 
@@ -195,8 +197,8 @@ function generateFloorPlanHTML(project, id , filenames) {
   return `
   <div class="tab-pane fade" id="${id}">
     <section  id="${id}" class="container section-details">
-    <h1 id="section-title" class="post-title">Floor Plan</h1>
-    <div class = " floor-plan">
+    <h1 id="section-title" class="post-title">${sectionName}</h1>
+    <div class = "floor-plan">
       ${floorplan_items} 
     </div>
     </section>
@@ -204,50 +206,52 @@ function generateFloorPlanHTML(project, id , filenames) {
 `;
 }
 
-function generateCarouselHTML(carousel, sectionId , sectionName ) {
+function generateCarouselHTML(carousel, sectionId, sectionName) {
   if (!Array.isArray(carousel) || carousel.length === 0) {
-      console.warn(`Carousel data is missing or incorrect`);
-      return ''; // Return an empty string if carousel data is not available or empty
+    console.warn(`Carousel data is missing or incorrect`);
+    return ''; // Return an empty string if carousel data is not available or empty
   }
 
-  // Generate carousel items
+  // Generate carousel items with captions
   const items = carousel.map((item, index) => `
-      <div class="carousel-item ${index === 0 ? 'active' : ''}"  data-interval="6000">
-          <img src="${item.src}" class="d-block w-100" alt="${item.alt}">
+    <div class="carousel-item ${index === 0 ? 'active' : ''}" data-interval="6000">
+      <img src="${item.src}" class="d-block w-100" alt="${item.alt}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>${item.alt}</h5>
       </div>
+    </div>
   `).join('');
 
-  const itemsIndicator =  carousel.map((item, index) => `
- 
-      <li data-target="#carouselExample${sectionId}" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>
- 
-`).join('');
+  const itemsIndicator = carousel.map((item, index) => `
+    <li data-target="#carouselExample${sectionId}" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>
+  `).join('');
 
   // Complete carousel HTML wrapped in the desired structure
   return `
-      <div class="tab-pane fade" id="${sectionId}">
-          <section class="container section-details">
-              <h1 id="section-title" class="post-title ">${sectionName}</h1>
-              <div id="carouselExample${sectionId}" class="carousel slide" data-ride="carousel">
-                 <ol class="carousel-indicators">
-                     ${itemsIndicator}
-                  </ol>
-                  <div class="carousel-inner">
-                      ${items}
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExample${sectionId}" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExample${sectionId}" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                  </a>
-              </div>
-          </section>
-      </div>
+    <div class="tab-pane fade" id="${sectionId}">
+      <section class="container section-details">
+        <h1 id="section-title" class="post-title ">${sectionName}</h1>
+        <div id="carouselExample${sectionId}" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            ${itemsIndicator}
+          </ol>
+          <div class="carousel-inner">
+            ${items}
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample${sectionId}" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample${sectionId}" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </div>
   `;
 }
+
 
 
   
