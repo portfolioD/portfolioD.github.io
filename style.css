@@ -679,7 +679,6 @@
   
     .hand-sketches img {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow effect */
-        border: 1px solid rgb(237, 180, 30) !important;
     }
     
     @media (min-width: 768px) {
