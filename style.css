@@ -756,5 +756,10 @@
         color:#ae9536c7 !important
       }
  
+
+      .darkmode .jumbotron {
+        background-image:linear-gradient(182deg , #F6F4EF, #e2bd8696);
+        color: #707070;
+    }
   
       

@@ -71,6 +71,11 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+              <!-- Bootstrap Dark/Light Mode Toggle -->
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="darkSwitch">
+          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        </div>
       </section>
 
       <!-- Section 2 -->
@@ -155,7 +160,20 @@
       </div>
     </div>
   </footer>
-
+<script>// JavaScript to toggle dark mode
+  document.addEventListener('DOMContentLoaded', () => {
+    const darkSwitch = document.getElementById('darkSwitch');
+  
+    darkSwitch.addEventListener('change', () => {
+      if (darkSwitch.checked) {
+        // Apply dark mode
+        document.body.classList.add('darkmode');
+      } else {
+        // Revert to light mode
+        document.body.classList.remove('darkmode');
+      }
+    });
+  });</script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
