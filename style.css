@@ -746,10 +746,15 @@
         #imageModal .modal-dialog {
           max-width: 90% !important; /* Makes the modal wider on small screens, adjust as needed */
         }
+        .section-details{
+            width:95vw !important;
+        }
       }
       
 
-      .gold_text{
+      .gold-text{
         color:#ae9536c7 !important
       }
  
+  
+      

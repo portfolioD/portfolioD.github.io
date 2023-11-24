@@ -189,14 +189,18 @@ function generateFloorPlanHTML(project, id , filenames ,sectionName) {
     <div  class = "dp-images">
     <figure class="figure">
     <img src="${item.img.src}" class="floorplan figure-img img-fluid rounded border" alt="${item.img.alt}">
-      <figcaption class="figure-caption text-center">${item.img.alt}.</figcaption>
+      <figcaption class="figure-caption text-center">${item.img.alt}</figcaption>
     </figure>
    </div> 
 `).join('');
+
+  var no_of_items =  filenames.length
+  console.log("length----------------------" ,  no_of_items )
+  no_of_items = (no_of_items == 1)? "one" : "";
   // Replace with the actual static content for the 'Floor Plan' section
   return `
   <div class="tab-pane fade" id="${id}">
-    <section  id="${id}" class="container section-details">
+    <section  id="${id}" class="container section-details one">
     <h1 id="section-title" class="post-title">${sectionName}</h1>
     <div class = "floor-plan">
       ${floorplan_items} 
@@ -294,7 +298,7 @@ let mainTemplate = `
   
     <!-- Modal -->
     <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-cl" role="document">
+      <div class="modal-dialog modal-cl modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
               <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>

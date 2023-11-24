@@ -286,10 +286,20 @@
           "name": "BLOCK PLANS",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "resource", 
-          "img": {
-            "src": "../images/block_plans_chez_audrey.png",
-            "alt": "BLOCK PLANS"
+          "useTemplate" : "carousel", 
+          "content": {
+            "carousel": [
+              {
+                "src": "../images/chez_audrey_block_ground_plan.png",
+                "alt": "Ground level perspective",
+                "isActive": true
+              },
+              {
+                "src": "../images/chez_audrey_block_mezzanine_plan.png",
+                "alt": "Mezzanine level perspective",
+                "isActive": false
+              }
+            ]
           }
         },
         {
