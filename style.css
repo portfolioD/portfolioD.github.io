@@ -744,11 +744,11 @@
 
       @media (max-width: 576px) { /* Adjust for mobile screens */
         #imageModal .modal-dialog {
-          max-width: 90% !important; /* Makes the modal wider on small screens, adjust as needed */
-        }
-        .section-details{
+          max-width: 90% !important; /* Makes the modal wider on small screens, adjust as needed        .section-details{
             width:95vw !important;
+        }*/
         }
+ 
       }
       
 
