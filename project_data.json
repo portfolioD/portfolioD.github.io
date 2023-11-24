@@ -286,7 +286,7 @@
           "name": "BLOCK PLANS",
           "isPresent": true,
           "isFirst": false,
-          "useTemplate" : "carousel", 
+          "useTemplate" : "render-in-carousel", 
           "content": {
             "carousel": [
               {
@@ -295,7 +295,7 @@
                 "isActive": true
               },
               {
-                "src": "../images/chez_audrey_block_mezzanine_plan.png",
+                "src": "../images/chez_audrey_block_mezzazine_plan.png",
                 "alt": "Mezzanine level perspective",
                 "isActive": false
               }
