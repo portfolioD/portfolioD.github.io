@@ -762,4 +762,27 @@
         color: #707070;
     }
   
-      
+    row.featurette {
+        background-color: #f0ede8;
+        padding-top: 46px;
+    }
+    
+    #landing_page.white-mode .section-details {
+        padding-top: 0px !important;
+        background: linear-gradient(91deg,#f0e8dab0, #f0ede8);
+        padding: 30px;
+    }
+    @media (max-width: 767px){
+        #landing_page.darkmode .section-details {
+            margin-bottom: 0px; 
+        }
+    }
+
+    #landing_page.white-modee .section-details {
+        padding-top: 0px !important;
+        background: linear-gradient(91deg,#f0e8dab0, #f0ede8);
+        padding: 30px;
+    }
+    #landing_page.white-mode hr {
+        border-top: 1px solid #e5c137;
+    }
