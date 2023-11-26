@@ -35,6 +35,10 @@
                 display:none;
 
             }
+
+            .section-details, .section-details-tab {
+                padding-top: 0px; 
+            }
        
         }
         @media (max-width: 768px) {
@@ -654,6 +658,8 @@
 @media (max-width: 768px) {
     .project-tab-col {
        padding-top: 0px !important; 
+       width: 100vw;
+
     }
 
     #hand-sketches li.nav-item {
@@ -678,6 +684,7 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
         overflow-x: scroll;
+        background: oldlace;
     }
     
     #navbarTogglerDemo01::-webkit-scrollbar {
