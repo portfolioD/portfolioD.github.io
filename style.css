@@ -26,6 +26,7 @@
             .project-title
             {
                 font-size: 1.34em;
+                font-family: 'Spectral',Georgia,"Times New Roman",serif !important;
             }
             .h3.title-border-project.post-sub-title {
                 font-size: 1.2em;
@@ -370,7 +371,8 @@
             margin-top: 10px;
             font-size: 1.6em;
             color: #635A2C !important;
-            font-weight: 700;
+            font-weight: 500;
+            font-family: 'Spectral',Georgia,"Times New Roman",serif !important;
         }
 
 
