@@ -686,6 +686,11 @@
         overflow-x: scroll;
         background: oldlace;
     }
+
+    #navbarTogglerDemo01 .section-details-tab{
+        padding-top:0px;
+
+    }
     
     #navbarTogglerDemo01::-webkit-scrollbar {
         display: none;
