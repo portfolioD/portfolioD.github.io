@@ -484,8 +484,8 @@
             margin-bottom: 20px;
             color: #635A2C !important;
             font-weight: 500;
-            font-family: 'Spectral',Georgia,"Times New Roman",serif;
-            letter-spacing: 2px;
+            font-family: 'Spectral',Georgia,"Times New Roman",serif !important;
+            letter-spacing: 1px;
             font-size: 2.2em;
           }
 
