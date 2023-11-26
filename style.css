@@ -256,7 +256,10 @@
                 font-size: 1.4em !important;
             }
             .post-title {     
-                font-size: 1.3em !important;
+                font-weight: 500;
+                font-family: 'Spectral',Georgia,"Times New Roman",serif !important;
+                text-transform: capitalize;
+                
             }
         }
         #landing_page .page-title , #contact_page .page-title
