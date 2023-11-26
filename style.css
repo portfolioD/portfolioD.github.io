@@ -377,6 +377,7 @@
             color: #635A2C !important;
             font-weight: 500;
             font-family: 'Spectral',Georgia,"Times New Roman",serif !important;
+            letter-spacing: 1px;
         }
 
 
@@ -688,7 +689,7 @@
     }
 
     #navbarTogglerDemo01 .section-details-tab{
-        padding-top:0px;
+        padding-top:0px !important;
 
     }
     
