@@ -747,6 +747,9 @@
             width: 100%; /* Full width to cover the carousel item */
             overflow: hidden; /* Hide the overflow to maintain the fixed height */
           }
+          .gold_line{
+            border-bottom: 0px !important;
+        }
     }
    
 
@@ -798,6 +801,12 @@
         #landing_page.darkmode .section-details {
             margin-bottom: 0px; 
         }
+        .gold_line{
+            border-bottom: 3px solid rgb(237, 180, 30) !important;
+        }
+        .title-border-project{
+            border-bottom: 0px !important;
+        }
     }
 
     #landing_page.white-modee .section-details {
@@ -812,3 +821,5 @@
     .featurette-heading.p1-l{
         letter-spacing: 1px !important;
     }
+
+    
