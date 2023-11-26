@@ -482,8 +482,11 @@
 
           .page-title {
             margin-bottom: 20px;
-            color:#635A2C !important;
-            font-weight: 600;
+            color: #635A2C !important;
+            font-weight: 500;
+            font-family: 'Spectral',Georgia,"Times New Roman",serif;
+            letter-spacing: 2px;
+            font-size: 2.2em;
           }
 
           .sidebar-section{
