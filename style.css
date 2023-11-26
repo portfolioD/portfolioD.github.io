@@ -791,3 +791,7 @@
     #landing_page.white-mode hr {
         border-top: 1px solid #e5c137;
     }
+
+    .p-1{
+        letter-spacing: 1px !important;
+    }
