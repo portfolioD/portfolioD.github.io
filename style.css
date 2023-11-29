@@ -248,7 +248,7 @@
         .one .floor-plan .dp-images{
             max-width: 100%  !important; 
         }
-        
+
         @media (max-width: 767px) {     
             #landing_page .section-details img {
             margin-top: 0px !important;
@@ -264,8 +264,8 @@
             #landing_page .page-title
             {  
                 font-size:2.0em !important;
-                width:90%;
-                margin-left:5%
+                width:90% !important;
+                margin:10px 0 !important;
             }
         }
         #landing_page .page-title , #contact_page .page-title
