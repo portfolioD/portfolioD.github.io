@@ -1,0 +1,71 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virginia Kestel | {{title}}</title>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="../style.css">
+</head>    <!-- Sticky Top Navbar -->
+<div class="sticky-top">
+    <div class="container portfolio-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div id="hero_im">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logo.png" alt="Desktop Image" class="img-fluid">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <span class="close-menu" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Close">
+                  &times;
+               </span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Hero Image -->
+<div class="hero_container container container-fluid p-0">
+
+    <div class="row align-items-center">
+        <div class="col hero text-center">
+            <img src="../images/{{hero_src}}" class="d-block w-100" alt="hero_alt">
+        </div>
+    </div>
+</div>
+
+<nav class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Breadcrumb -->
+          <ol class="breadcrumb mb-0 fs-xs text-gray-400">
+            <li class="breadcrumb-item">
+              <a class="text-beige-400" href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="text-beige-400" href="../portfolio.html">Portfolio</a>
+            </li>
+            <li class="breadcrumb-item active">
+                {{ title }}
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </nav>
