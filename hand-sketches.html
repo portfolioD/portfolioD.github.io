@@ -38,12 +38,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#section4">Media</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#section5">Thesis</a>
-                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -72,13 +66,13 @@
                     <!-- Gallery -->
                         <div class="row">
                             <div class="col-md-4 mb-4">
-                                <img src="images/handsketches_chair_of_renisereb.png" class="img-fluid sketch" alt="Sketch 1">
+                                <img src="images/handsketches_chair_of_renisereb.png" class="img-fluid sketch" alt="Chair of renisereb">
                             </div>
                             <div class="col-md-4 mb-4">
-                                <img src="images/handsketches_mechanical_table.png" class="img-fluid sketch" alt="Sketch 2">
+                                <img src="images/handsketches_mechanical_table.png" class="img-fluid sketch" alt="Mechanical Table">
                             </div>
                             <div class="col-md-4 mb-4">
-                                <img src="images/handsketches_side_chair.png" class="img-fluid sketch" alt="Sketch 3">
+                                <img src="images/handsketches_side_chair.png" class="img-fluid sketch" alt="Side Chair">
                             </div>
                             <!-- Add more images in similar columns -->
                         </div>
@@ -163,12 +157,12 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="text-muted">
+      <footer class="footer container">
         <div class="container">
-          <p class="float-right">
-            <a href="#">Back to top</a>
-          </p>
-          <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+          <div class="row">
+            <p>©2023 Virginia Kestel. All Rights Reserved.</p>
+            <!-- Bootstrap Dark/Light Mode Toggle -->
+          </div>
         </div>
       </footer>
 
@@ -176,11 +170,13 @@
     <script>
         // JavaScript to handle clicking on images
         document.querySelectorAll('.sketch').forEach(item => {
-        item.addEventListener('click', event => {
-        const src = item.getAttribute('src');
-        document.getElementById('modalImage').src = src;
-        $('#imageModal').modal('show');
-        });
+            item.addEventListener('click', event => {
+            const src = item.getAttribute('src');
+            const altText = item.getAttribute('alt');
+            document.getElementById('imageModalLabel').innerHTML = altText;
+            document.getElementById('modalImage').src = src;
+            $('#imageModal').modal('show');
+            });
         });
     </script>
     
