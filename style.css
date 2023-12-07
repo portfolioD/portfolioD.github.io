@@ -839,10 +839,59 @@
 
     .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D7C378' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-       }
-       
-       .carousel-control-next-icon {
-         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D7C378' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-       }
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D7C378' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+
+    /* Move the navbar-toggler to the right on larger screens */
+    @media (min-width: 768px) {
+        .navbar-toggler {
+            order: 2; /* Change the order to move to the right */
+        }
+    }
+
+    /* Ensure the toggle menu expands to the right on small devices */
+    @media (max-width: 767px) {
+        /* Ensure expanded menu is accessible */
+        .navbar-collapse {
+            position: absolute;
+            top: 54px; /* Adjust this value based on your logo height */
+            left: 0;
+            right: 0;
+            background-color: #f8f9fa; /* Customize background color */
+            padding: 10px; /* Adjust padding as needed */
+            border: 1px solid #ddd; /* Customize border as needed */
+            z-index: 1000;
+        }
+
+        .navbar-toggler.collapsed + .navbar-collapse {
+            right: 0;
+        }
+
+        .navbar-toggler {
+            order: -1;
+        }
+
+        /* Center the logo */
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top:10px;
+        }
+
+        /* Close button style */
+        .close-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px; /* Adjust the font size to make the icon bigger */
+        }
+
+
+    }
 
     
