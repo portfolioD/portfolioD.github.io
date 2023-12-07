@@ -895,7 +895,35 @@
             font-size: 24px; /* Adjust the font size to make the icon bigger */
         }
 
-
     }
 
+    #goToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff; /* Customize background color */
+        color: #fff; /* Customize text color */
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+      }
+      
+      #goToTop span {
+        display: block;
+        text-align: center;
+        line-height: 1;
+      }
+
+      section#portfolio {
+        border: 0px !important;
+        background: #d3d3b733;
+    }
+
+     /* .container.mt-4.hand-sketches {
+        background-image: linear-gradient(182deg , #F6F4EF, #e2bd8696);
+        min-height: 100vh;
+    }*/
     
