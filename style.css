@@ -852,6 +852,9 @@
         }
     }
 
+    .close-menu {
+        visibility: hidden;
+    }
     /* Ensure the toggle menu expands to the right on small devices */
     @media (max-width: 767px) {
         /* Ensure expanded menu is accessible */
@@ -879,12 +882,13 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            top:10px;
+            top:0;
         }
 
         /* Close button style */
         .close-menu {
             position: absolute;
+            visibility: visible;
             top: 10px;
             right: 10px;
             cursor: pointer;
