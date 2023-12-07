@@ -755,6 +755,16 @@
           .gold_line{
             border-bottom: 0px !important;
         }
+
+        #project_details .carousel-item.carousel-floorplan{
+            height: fit-content; /* Set a fixed height for the image wrapper */
+            width: 100%; /* Full width to cover the carousel item */
+            overflow: hidden; /* Hide the overflow to maintain the fixed height */
+          }
+
+          .carousel-item.carousel-floorplan img{
+            max-height: fit-content;
+        }
     }
    
 

@@ -146,20 +146,38 @@
   
     <li data-target="#carouselExamplesection2" data-slide-to="1" class=""></li>
   
+    <li data-target="#carouselExamplesection2" data-slide-to="2" class=""></li>
+  
+    <li data-target="#carouselExamplesection2" data-slide-to="3" class=""></li>
+  
           </ol>
           <div class="carousel-inner">
             
     <div class="carousel-item active" data-interval="6000">
-      <img src="../images/ground_level_perspective_traditional_living_room.png" class="d-block w-100" alt="Ground level perspective traditional living room">
+      <img src="../images/traditional-1.png" class="d-block w-100" alt="traditional living room">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Ground level perspective traditional living room</h5>
+        <h5>traditional living room</h5>
       </div>
     </div>
   
     <div class="carousel-item " data-interval="6000">
-      <img src="../images/mezzanine_perspective_traditional_living_room.png" class="d-block w-100" alt="Mezzanine perspective traditional living room">
+      <img src="../images/traditional-2.png" class="d-block w-100" alt="traditional living room">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Mezzanine perspective traditional living room</h5>
+        <h5>traditional living room</h5>
+      </div>
+    </div>
+  
+    <div class="carousel-item " data-interval="6000">
+      <img src="../images/traditional-3.png" class="d-block w-100" alt="traditional living room">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>traditional living room</h5>
+      </div>
+    </div>
+  
+    <div class="carousel-item " data-interval="6000">
+      <img src="../images/traditional-4.png" class="d-block w-100" alt="traditional living room">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>traditional living room</h5>
       </div>
     </div>
   
@@ -285,13 +303,24 @@
       <div class="modal-dialog modal-cl modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-              <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>
+          <h5 class="modal-title" id="imageModalLabelEnlarged">Enlarged Image</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
               </button>
           </div>
           <div class="modal-body">
-              <img id="modalImage" src="" class="img-fluid sketch" alt="Enlarged Sketch">
+          <div id="carouselFloorplanIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Images will be inserted here dynamically -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselFloorplanIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselFloorplanIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
          </div>
        </div>
@@ -311,21 +340,43 @@
             </div>
         </footer>
         </body>
-  <script>
-  // JavaScript to handle clicking on images
-  document.querySelectorAll('.floorplan').forEach(item => {
-  item.addEventListener('click', event => {
-  const src = item.getAttribute('src');
-  const alt = item.getAttribute('alt');
-  document.getElementById('modalImage').src = src;
-  document.getElementById('imageModalLabel').textContent  = alt
-  
-  $('#imageModal').modal('show');
-  });
-  });
-  </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
+
+  document.querySelectorAll('.floorplan').forEach(item => {
+      item.addEventListener('click', event => {
+          var carouselInner = $('#carouselFloorplanIndicators .carousel-inner');
+          carouselInner.empty(); // Clear existing items
+  
+          // Select all images with class 'floorplan' and populate the carousel
+          $('.floorplan').each(function(index){
+              var itemClass = 'carousel-item carousel-floorplan';
+              var imgSrc = $(this).attr('src');
+              var altText = $(this).attr('alt');
+  
+              // Set the first item as active if it's the clicked image
+              if(imgSrc === item.getAttribute('src')){
+                  itemClass += ' active';
+              }
+  
+              carouselInner.append(`<div class="${itemClass} " data-title="${altText}"><img id="modalImage" class="img-fluid sketch" src="${imgSrc}" alt="Slide ${index}"></div>`);
+          });
+  
+          // Set initial title and show the modal
+          var initialTitle = carouselInner.find('.carousel-item.active').data('title');
+          $('#imageModalLabelEnlarged').text(initialTitle);
+          $('#imageModal').modal('show');
+      });  
+  });
+  
+  // When a new slide becomes active
+  $('#carouselFloorplanIndicators').on('slid.bs.carousel', function () {
+      var activeItem = $(this).find('.carousel-item.active');
+      var newTitle = activeItem.data('title'); // Get the title from the data attribute
+      $('#imageModalLabelEnlarged').text(newTitle); // Update the modal title
+  });
+  
+</script>
 </html>
