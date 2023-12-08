@@ -393,7 +393,7 @@
         .project-title {
             margin-top: 10px;
             font-size: 1.6em;
-            color: #635A2C !important;
+            color: #635A2C;
             font-weight: 500;
             font-family: 'Spectral',Georgia,"Times New Roman",serif !important;
             letter-spacing: 1px;
@@ -950,4 +950,8 @@
         .carousel-floorplan img{
             max-height: 400px;
         }
+    }
+
+    .modal-header{
+       background: mintcream;
     }
