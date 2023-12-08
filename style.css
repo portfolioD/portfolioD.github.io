@@ -31,7 +31,7 @@
                 padding-bottom:1em !important;
                 background-color: #adbb98;
                 margin-bottom: 0rem;
-                color: #fff;
+                color: #fff !important;
             }
             .h3.title-border-project.post-sub-title {
                 font-size: 1.2em;
@@ -342,10 +342,12 @@
             color: #725A2C;
             line-height: 1.7;
 
+
         }
 
         div#project-details-section {
             border: 1px solid #EDE2CD;
+            padding-bottom:3rem;
         }
         @media (max-width: 767px) {
         /* Your CSS styles for smaller screens go here */
