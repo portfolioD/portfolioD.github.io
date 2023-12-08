@@ -934,4 +934,12 @@
         background-image: linear-gradient(182deg , #F6F4EF, #e2bd8696);
         min-height: 100vh;
     }*/
-    
+    @media (max-width: 767px) {
+        .carousel-control-next, .carousel-control-prev {
+            width:20px !important;
+        }
+
+        .carousel-floorplan img{
+            max-height: 400px;
+        }
+    }
