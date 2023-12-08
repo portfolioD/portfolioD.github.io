@@ -346,10 +346,13 @@
         /* Your CSS styles for smaller screens go here */
             .section-details {
                 margin-bottom: 20px;
-                width: 93vw;
+                width: 100vw;
             }
             .project-title {
                 margin-top: 1px !important;
+            }
+            .section-details-tab .section-details {
+                width: 93vw !important;
             }
         }
 
