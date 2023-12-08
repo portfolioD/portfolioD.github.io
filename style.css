@@ -788,6 +788,7 @@
         position: static; /* Override default positioning */
         padding-top: 4px; /* Provide some space between the image and the caption */
         color: #635A2C !important; /* Optional: Change text color */
+        display: block !important;
       }
 
       @media (max-width: 576px) { /* Adjust for mobile screens */
