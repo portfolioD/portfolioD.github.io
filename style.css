@@ -938,6 +938,10 @@
         background: #d3d3b733;
     }
 
+    .mobile-only{
+        display: none;
+     }
+
      /* .container.mt-4.hand-sketches {
         background-image: linear-gradient(182deg , #F6F4EF, #e2bd8696);
         min-height: 100vh;
@@ -950,6 +954,9 @@
         .carousel-floorplan img{
             max-height: 400px;
         }
+        .mobile-only{
+            display:block  !important;
+        }
     }
 
     .modal-header{
@@ -959,3 +966,14 @@
     .modal-title{
         color:#2b1515;
     }
+ 
+
+    #socialIcons {
+        display: inline-flex;
+        align-items: center;
+      }
+  
+      #socialIcons a {
+        margin-right: 10px; /* Adjust the spacing between icons */
+        width: 24px; /* Set the width of the icons */
+      }
