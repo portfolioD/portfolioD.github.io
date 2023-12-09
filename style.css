@@ -955,3 +955,7 @@
     .modal-header{
        background: mintcream;
     }
+
+    .modal-title{
+        color:#2b1515;
+    }
